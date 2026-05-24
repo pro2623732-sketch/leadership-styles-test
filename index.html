@@ -11,8 +11,6 @@
 body{font-family:'IBM Plex Sans',system-ui,sans-serif;background:var(--bg);color:var(--n);min-height:100vh}
 .scr{display:none}.scr.on{display:block}
 .brand{background:var(--n);padding:14px 24px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:10}
-.bdot{width:6px;height:6px;background:var(--a);border-radius:50%;flex-shrink:0}
-.bname{color:rgba(255,255,255,.9);font-size:13px;font-weight:600;letter-spacing:.5px}
 #pb-wrap{background:var(--n);padding:0 24px 10px;display:none;position:sticky;top:49px;z-index:9}
 .pb-info{display:flex;justify-content:space-between;font-size:12px;color:rgba(255,255,255,.55);margin-bottom:5px}
 .pb-track{height:3px;background:rgba(255,255,255,.15);border-radius:2px}
@@ -20,22 +18,19 @@ body{font-family:'IBM Plex Sans',system-ui,sans-serif;background:var(--bg);color
 .wrap{max-width:680px;margin:0 auto;padding:20px 16px}
 .ww{max-width:920px;margin:0 auto;padding:20px 16px}
 .card{background:var(--w);border-radius:14px;padding:24px 26px;border:.5px solid var(--br);margin-bottom:14px}
-h1{font-size:22px;font-weight:700;margin-bottom:10px;line-height:1.3}
-h2{font-size:18px;font-weight:700;margin-bottom:8px}
-.lbl{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--m);margin-bottom:8px}
+.lbl{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--m);margin-bottom:10px}
 .mu{color:var(--mu);font-size:14px;line-height:1.65}
 .fi{margin-bottom:14px}
 .fi label{display:block;font-size:13px;font-weight:600;margin-bottom:5px}
 .fi input{width:100%;padding:10px 13px;border:1.5px solid var(--br);border-radius:8px;font-size:14px;font-family:inherit;color:var(--n);background:var(--bg);outline:none;transition:border-color .2s}
 .fi input:focus{border-color:var(--a);background:var(--w)}
-.consent-row{display:flex;align-items:flex-start;gap:10px;padding:13px 15px;background:var(--bg);border-radius:9px;border:1.5px solid var(--br);margin-bottom:16px;cursor:pointer;transition:border-color .2s}
-.consent-row:hover{border-color:var(--a)}
-.consent-row input[type=checkbox]{width:17px;height:17px;flex-shrink:0;margin-top:2px;cursor:pointer;accent-color:var(--n)}
+.consent-row{display:flex;align-items:flex-start;gap:10px;padding:13px 15px;background:var(--bg);border-radius:9px;border:1.5px solid var(--br);margin-bottom:16px;cursor:pointer}
+.consent-row input[type=checkbox]{width:17px;height:17px;flex-shrink:0;margin-top:2px;accent-color:var(--n)}
 .consent-row p{font-size:12.5px;line-height:1.6;color:var(--mu)}
 .btn{width:100%;padding:13px;border-radius:9px;border:none;background:var(--n);color:var(--w);font-family:inherit;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
 .btn:hover:not(:disabled){background:var(--b);transform:translateY(-1px)}
 .btn:disabled{background:var(--br);color:var(--mu);cursor:default;transform:none}
-.bto{padding:10px 18px;border-radius:8px;border:1.5px solid var(--br);background:var(--w);color:var(--n);font-family:inherit;font-size:14px;font-weight:600;cursor:pointer;transition:border-color .2s}
+.bto{padding:10px 18px;border-radius:8px;border:1.5px solid var(--br);background:var(--w);color:var(--n);font-family:inherit;font-size:14px;font-weight:600;cursor:pointer}
 .bto:hover{border-color:var(--n)}
 .brow{display:flex;gap:10px;align-items:center}
 .brow .btn{flex:1}
@@ -44,11 +39,11 @@ h2{font-size:18px;font-weight:700;margin-bottom:8px}
 .step-row{display:flex;gap:10px;margin-bottom:10px;align-items:flex-start}
 .snum{width:22px;height:22px;border-radius:50%;background:var(--n);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
 .stxt{font-size:13px;line-height:1.6;color:var(--mu)}
-.stxt b{color:var(--n);font-weight:600}
-.bul-row{display:flex;gap:8px;align-items:flex-start;margin-bottom:7px}
+.stxt b{color:var(--n)}
+.bul{display:flex;gap:8px;align-items:flex-start;margin-bottom:7px}
 .bdot{width:5px;height:5px;border-radius:50%;background:var(--m);flex-shrink:0;margin-top:6px}
 .btxt{font-size:13px;line-height:1.55;color:var(--mu)}
-.btxt b{color:var(--n);font-weight:600}
+.btxt b{color:var(--n)}
 .sd-row{display:flex;border:.5px solid var(--br);border-radius:6px;overflow:hidden}
 .sd-cell{flex:1;border-right:.5px solid var(--br);text-align:center;padding:6px 2px;font-size:12px;font-weight:700;background:var(--w)}
 .sd-cell:last-child{border-right:none}
@@ -61,7 +56,7 @@ h2{font-size:18px;font-weight:700;margin-bottom:8px}
 .how-row:last-child{margin-bottom:0}
 .hnum{width:20px;height:20px;border-radius:50%;background:var(--m);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
 .htxt{font-size:13px;line-height:1.55;color:var(--mu)}
-.htxt b{color:var(--n);font-weight:600}
+.htxt b{color:var(--n)}
 .sit-lbl{font-size:10px;font-weight:700;letter-spacing:2px;color:var(--a);text-transform:uppercase;margin-bottom:6px}
 .sit-txt{font-size:14.5px;font-weight:500;line-height:1.65;margin-bottom:14px}
 .sit-sub{font-size:13px;font-weight:700;margin-bottom:12px}
@@ -73,20 +68,18 @@ h2{font-size:18px;font-weight:700;margin-bottom:8px}
 .tl{font-size:13px;font-weight:700;color:var(--m);margin-bottom:3px}
 .tt{font-size:12px;line-height:1.45;color:var(--mu)}
 .tbadge{position:absolute;top:6px;right:8px;background:var(--n);color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:10px;font-family:monospace}
-.hint-bar{font-size:11.5px;color:var(--b);background:var(--li);border-radius:6px;padding:6px 11px;margin-bottom:8px;min-height:28px;line-height:1.5}
+.hint-bar{font-size:11.5px;color:var(--b);background:var(--li);border-radius:6px;padding:6px 11px;margin-bottom:8px;min-height:28px}
 .scale-wrap{margin:0 0 14px}
 .scale-hint{display:flex;justify-content:space-between;font-size:10px;color:var(--mu);margin-bottom:5px}
 .scale-grid{display:flex;border:1.5px solid var(--br);border-radius:8px;overflow:hidden}
 .sc{flex:1;border-right:1px solid var(--br);cursor:pointer;text-align:center}
 .sc:last-child{border-right:none}
 .sc-top{height:34px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:var(--b);border-bottom:1px solid var(--br)}
-.sc-top.empty{background:var(--w)}
-.sc-top.empty:hover{background:var(--li)}
-.sc-top.hl{background:var(--li)}
+.sc-top.empty{background:var(--w)}.sc-top.empty:hover{background:var(--li)}.sc-top.hl{background:var(--li)}
 .sc-bot{height:24px;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--mu);background:var(--bg)}
 .ok-msg{font-size:12.5px;color:#065f46;background:#d1fae5;border-radius:6px;padding:7px 11px;margin-bottom:10px;display:none;font-weight:600}
 .ok-msg.on{display:block}
-.tr-ic{width:48px;height:48px;border-radius:50%;background:#d1fae5;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:22px;color:#065f46;font-weight:700}
+.tr-ic{width:48px;height:48px;border-radius:50%;background:#d1fae5;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:22px;color:#065f46}
 .nbtns{display:flex;gap:8px}
 .nb{flex:1;padding:11px;border-radius:8px;border:2px solid var(--br);background:var(--w);color:var(--n);font-family:inherit;font-size:17px;font-weight:700;cursor:pointer;transition:all .15s}
 .nb.on{border-color:var(--n);background:var(--n);color:var(--w)}
@@ -96,84 +89,74 @@ h2{font-size:18px;font-weight:700;margin-bottom:8px}
 .at{width:100%;border-collapse:collapse}
 .at th{background:var(--n);color:#fff;padding:9px 11px;font-size:12px;font-weight:600;text-align:center}
 .at th:first-child{text-align:left}
-.editable-name{outline:none;cursor:text;border-bottom:1px dashed rgba(255,255,255,.4);display:inline-block;min-width:40px}
-.editable-name:focus{border-bottom:1px solid #fff;background:rgba(255,255,255,.1);border-radius:3px;padding:0 3px}
 .at td{padding:8px 11px;border-bottom:1px solid var(--br);font-size:13px;vertical-align:middle}
 .at tr:nth-child(even) td{background:var(--bg)}
 .ctag{font-size:10px;font-weight:700;padding:1px 4px;border-radius:3px;margin-left:5px}
-.tnr{background:#dbeafe;color:#1e40af}.tsz{background:#d1fae5;color:#065f46}
+.tnr{background:#dbeafe;color:#1e40af}.tsz{background:#d1fae5;color:#065f46}.tnt{background:#fef3c7;color:#92400e}
+.editable-name{outline:none;cursor:text;border-bottom:1px dashed rgba(255,255,255,.4);display:inline-block;min-width:40px}
+.editable-name:focus{background:rgba(255,255,255,.1);border-radius:3px;padding:0 3px}
 .ssel{width:50px;padding:6px 3px;border-radius:6px;border:1.5px solid var(--br);background:var(--w);font-family:monospace;font-size:14px;font-weight:700;text-align:center;cursor:pointer;-webkit-appearance:none}
 .ssel.on{border-color:var(--a);background:var(--li)}
 .rh{background:var(--n);border-radius:14px;padding:24px 26px;margin-bottom:14px}
 .rh h2{color:#fff;font-size:20px;margin-bottom:4px}
 .rh .rl{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:7px}
-.rh p{color:rgba(255,255,255,.65);font-size:13px;margin-top:4px}
+.rh p{color:rgba(255,255,255,.6);font-size:13px;margin-top:4px}
 .rnav{display:flex;gap:7px;margin-bottom:16px;overflow-x:auto;padding-bottom:3px}
 .rnb{flex-shrink:0;padding:7px 14px;border-radius:8px;border:1.5px solid var(--br);background:var(--w);color:var(--mu);font-family:inherit;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap;transition:all .15s}
 .rnb.on{border-color:var(--n);background:var(--n);color:#fff}
-.dom{padding:14px 17px;border-left:4px solid;margin-bottom:14px;background:var(--bg)}
-.dom .dl{font-size:11px;color:var(--mu);margin-bottom:3px}
-.dom .dn{font-size:20px;font-weight:700;margin-bottom:3px}
-.dom .ds{font-size:13px;color:var(--mu)}
-.barr{margin-bottom:9px}
-.bi{display:flex;justify-content:space-between;font-size:12px;margin-bottom:3px}
-.bt{height:8px;background:var(--br);border-radius:4px}
-.bf{height:8px;border-radius:4px;transition:width .8s}
-.exb{display:flex;align-items:center;gap:5px;font-size:13px;color:var(--m);background:none;border:none;cursor:pointer;padding:7px 0;font-family:inherit;font-weight:600}
-.exb:hover{color:var(--n)}
-.exbd{display:none;margin-top:10px}
-.exbd.on{display:block}
-.sdef-table{width:100%;border-collapse:collapse;margin-top:14px}
-.sdef-table td{padding:11px 14px;border-bottom:1px solid var(--br);font-size:13px;vertical-align:top;line-height:1.6}
-.sdef-table tr:last-child td{border-bottom:none}
-.sdef-table .snum-c{width:36px;font-weight:700;font-size:15px;text-align:center}
-.sdef-table .scode{width:44px;font-weight:700;font-size:15px;text-align:center}
-.sdef-table .sdesc{color:var(--mu)}
-.sdef-table .sdesc b{font-weight:600}
-.sc-card{border:1.5px solid var(--br);border-radius:10px;padding:14px 16px;margin-bottom:11px}
-.sct{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px}
+.vbars{display:flex;gap:14px;align-items:flex-end;height:160px;margin:14px 0;padding:0 4px}
+.vbar-wrap{display:flex;flex-direction:column;align-items:center;gap:5px;height:100%;width:48px;flex-shrink:0}
+.vbar-track{width:32px;flex:1;background:var(--br);border-radius:4px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.vbar-fill{width:100%;transition:height 1s ease}
+.vbar-score{font-size:12px;font-weight:700;font-family:monospace}
+.vbar-lbl{font-size:14px;font-weight:700}
+.sc-card{border:1.5px solid var(--br);border-radius:10px;padding:14px 16px;margin-bottom:12px}
+.sct{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px;flex-wrap:wrap;gap:6px}
 .scn{font-weight:700;font-size:14px}
 .stb{font-weight:700;font-size:12px;padding:3px 12px;border-radius:20px;background:var(--li);font-family:monospace}
-.scs{display:flex;gap:14px;font-size:13px;margin-bottom:5px}
-.scd{font-size:13px;line-height:1.55;color:var(--mu)}
-.gt{width:100%;border-collapse:collapse}
-.gt th{background:var(--n);color:#fff;padding:10px 13px;font-size:13px;font-weight:600;text-align:center}
-.gt th:first-child{text-align:left}
-.gt td{padding:11px 13px;border-bottom:1px solid var(--br);font-size:14px;text-align:center;vertical-align:middle}
-.gt td:first-child{text-align:left;font-weight:600}
 .badge{display:inline-block;padding:4px 11px;border-radius:20px;font-size:12px;font-weight:700}
 .gm{background:#dcfce7;color:#166534}.gc{background:#fef9c3;color:#854d0e}.gr{background:#fee2e2;color:#991b1b}
-.recb{margin-bottom:16px;padding:14px 16px;border-left:4px solid;background:var(--bg)}
-.rect{font-weight:700;font-size:14px;margin-bottom:8px}
-.reci{display:flex;gap:7px;margin-bottom:6px;font-size:13px;line-height:1.55}
-.reca{font-weight:700;flex-shrink:0}
-.bls{padding:14px 16px;margin-bottom:11px;border-left:4px solid;background:var(--bg)}
-.blt{font-weight:700;font-size:14px;margin-bottom:5px}
-.blq{font-size:13px;color:var(--mu);font-style:italic;line-height:1.6;margin-top:5px}
+.exb{display:flex;align-items:center;gap:5px;font-size:13px;color:var(--m);background:none;border:none;cursor:pointer;padding:7px 0;font-family:inherit;font-weight:600}
+.exb:hover{color:var(--n)}
+.exbd{display:none;margin-top:10px}.exbd.on{display:block}
 .ct{width:100%;border-collapse:collapse;font-size:13px}
 .ct th{background:var(--bg);padding:6px 9px;font-weight:600;font-size:12px;text-align:center;border-bottom:1.5px solid var(--br)}
 .ct th:first-child{text-align:left}
 .ct td{padding:5px 9px;border-bottom:1px solid var(--br);text-align:center}
 .ct td:first-child{text-align:left;color:var(--mu)}
 .ct tfoot td{font-weight:700;border-top:2px solid var(--br);background:var(--bg)}
-.print-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:12px;border-radius:9px;border:1.5px solid var(--br);background:var(--w);color:var(--n);font-family:inherit;font-size:14px;font-weight:600;cursor:pointer;margin-top:10px}
-.print-btn:hover{border-color:var(--n);background:var(--bg)}
-@media print{.brand,#pb-wrap,.rnav,.print-btn{display:none!important}#r-0,#r-1,#r-2,#r-3{display:block!important}.exbd{display:block!important}}
+.pdf-btns{display:flex;gap:10px;margin-top:10px}
+.pbtn{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;padding:12px;border-radius:9px;border:1.5px solid var(--br);background:var(--w);color:var(--n);font-family:inherit;font-size:14px;font-weight:600;cursor:pointer;transition:all .2s}
+.pbtn:hover{border-color:var(--n);background:var(--bg)}
+.pbtn:disabled{opacity:.5;cursor:default}
+#pdf-status{display:none;font-size:12px;color:var(--mu);text-align:center;margin-top:8px;padding:6px}
+@media print{
+  .brand,#pb-wrap,.rnav,.pdf-btns,#pdf-status,button{display:none!important}
+  .exbd{display:block!important}
+  #r-0,#r-1{display:block!important}
+  .scr#scr-res{display:block!important}
+  .wrap{max-width:100%!important;padding:12px!important}
+  .card{break-inside:avoid;page-break-inside:avoid;border:1px solid #d0daea!important;margin-bottom:12px}
+  .sc-card{break-inside:avoid;page-break-inside:avoid}
+  .vbars{break-inside:avoid;page-break-inside:avoid}
+  .diff-item-inner{break-inside:avoid}
+  body{background:#fff!important}
+}
 </style>
 </head>
 <body>
-<div class="brand"><div style="width:6px;height:6px;background:var(--a);border-radius:50%;flex-shrink:0"></div><div style="color:rgba(255,255,255,.9);font-size:13px;font-weight:600;letter-spacing:.5px">Определение стилей руководства</div></div>
+<div class="brand"><div style="width:6px;height:6px;background:var(--a);border-radius:50%;flex-shrink:0"></div><div style="color:rgba(255,255,255,.9);font-size:13px;font-weight:600;letter-spacing:.5px;margin-left:4px">Определение стилей руководства</div></div>
 <div id="pb-wrap"><div class="pb-info"><span id="pb-lbl"></span><span id="pb-cnt"></span></div><div class="pb-track"><div id="pb-fill" style="width:0%"></div></div></div>
 
 <!-- REGISTER -->
 <div class="scr on" id="scr-reg"><div class="wrap"><div class="card" style="margin-top:8px">
   <div class="lbl">Тест</div>
-  <h1>Определение стилей руководства</h1>
-  <p class="mu" style="margin-bottom:20px">Тест из двух частей. Часть 1 — ваш стиль руководства (12 ситуаций). Часть 2 — оценка подчинённых. По завершении вы получите подробные результаты с рекомендациями.</p>
+  <h1 style="font-size:22px;font-weight:700;margin-bottom:10px;line-height:1.3">Определение стилей руководства</h1>
+  <p class="mu" style="margin-bottom:20px">Тест из двух частей. Часть 1 — ваш стиль руководства (12 ситуаций). Часть 2 — оценка подчинённых. По завершении вы сразу увидите результаты и сможете скачать их в PDF.</p>
   <div class="fi"><label>Ваше имя</label><input id="in-n" type="text" placeholder="Иван Петров" oninput="updReg()"></div>
   <div class="consent-row" onclick="document.getElementById('cb-c').click()">
     <input type="checkbox" id="cb-c" onclick="event.stopPropagation();updReg()">
-    <p>Я даю согласие на обработку персональных данных (имя, адрес электронной почты) в целях проведения данного тестирования, в соответствии с требованиями Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных». Данные используются исключительно для формирования результатов теста и не передаются третьим лицам.</p>
+    <p>Я даю согласие на обработку персональных данных (имя) в целях проведения тестирования в соответствии с ФЗ № 152-ФЗ «О персональных данных». Данные используются исключительно для формирования результатов теста.</p>
   </div>
   <button class="btn" id="btn-reg" disabled onclick="toI1()">Далее →</button>
 </div></div></div>
@@ -181,48 +164,35 @@ h2{font-size:18px;font-weight:700;margin-bottom:8px}
 <!-- INSTRUCTIONS 1 -->
 <div class="scr" id="scr-i1"><div class="wrap"><div class="card" style="margin-top:8px">
   <div class="lbl">Часть 1 из 2</div>
-  <h1>Как проходить тест</h1>
-  <p class="mu" style="margin-bottom:14px">Тест выявляет ваши стратегии управления. Здесь нет «правильных» или «плохих» ответов — есть только ваши привычные методы работы.</p>
+  <h1 style="font-size:22px;font-weight:700;margin-bottom:10px;line-height:1.3">Как проходить тест</h1>
+  <p class="mu" style="margin-bottom:14px">Тест выявляет ваши стратегии управления. Здесь нет «правильных» ответов — есть только ваши привычные методы работы.</p>
   <div class="hr"></div>
   <p style="font-size:14px;font-weight:600;margin:14px 0 10px">Как распределять баллы</p>
-  <p class="mu" style="margin-bottom:10px">В каждом вопросе — управленческая ситуация и 4 варианта действий (A, B, C, D). Расставьте их на шкале от 0 до 9:</p>
-  <div class="bul-row"><div class="bdot"></div><div class="btxt"><b>0–1</b> — «Категорически не мой метод»</div></div>
-  <div class="bul-row" style="margin-bottom:14px"><div class="bdot"></div><div class="btxt"><b>8–9</b> — «Моя естественная, автоматическая реакция»</div></div>
-  <p style="font-size:13px;font-weight:600;margin-bottom:10px">Алгоритм из 3 шагов:</p>
-  <div class="step-row"><div class="snum">1</div><div class="stxt"><b>Найдите крайности.</b> Сначала определите самый близкий вам вариант (к цифре 9) и самый нетипичный для вас (к цифре 0).</div></div>
-  <div class="step-row"><div class="snum">2</div><div class="stxt"><b>Сравните остальное.</b> Два оставшихся варианта распределите в промежутке — тот, что больше соответствует вашим реакциям, правее; тот, что меньше — левее.</div></div>
-  <div class="step-row" style="margin-bottom:12px"><div class="snum">3</div><div class="stxt"><b>Не группируйте буквы в одной части шкалы.</b> Чем шире они расставлены, тем точнее будет ваш персональный профиль.</div></div>
-  <div class="ibox">Одна цифра — одна буква. Все 4 буквы должны оказаться на шкале.</div>
+  <p class="mu" style="margin-bottom:10px">В каждом вопросе — ситуация и 4 варианта действий (A, B, C, D). Расставьте их на шкале от 0 до 9:</p>
+  <div class="bul"><div class="bdot"></div><div class="btxt"><b>0–1</b> — «Категорически не мой метод»</div></div>
+  <div class="bul" style="margin-bottom:14px"><div class="bdot"></div><div class="btxt"><b>8–9</b> — «Моя естественная, автоматическая реакция»</div></div>
+  <p style="font-size:13px;font-weight:600;margin-bottom:10px">Алгоритм:</p>
+  <div class="step-row"><div class="snum">1</div><div class="stxt"><b>Найдите крайности.</b> Самый близкий вам вариант — к 9. Самый нетипичный — к 0.</div></div>
+  <div class="step-row"><div class="snum">2</div><div class="stxt"><b>Распределите остальные два</b> в промежутке — ближе к правому или левому краю.</div></div>
+  <div class="step-row" style="margin-bottom:12px"><div class="snum">3</div><div class="stxt"><b>Не группируйте буквы.</b> Чем шире расставлены — тем точнее профиль.</div></div>
+  <div class="ibox">Одна цифра — одна буква. Все 4 буквы должны быть на шкале.</div>
   <div class="hr"></div>
   <p style="font-size:13px;font-weight:600;margin:14px 0 10px">Пример заполнения</p>
-  <div class="bul-row"><div class="bdot"></div><div class="btxt">Вариант <b>C</b> — ваша первая реакция → <b>8</b></div></div>
-  <div class="bul-row"><div class="bdot"></div><div class="btxt">Вариант <b>B</b> — категорически не мой метод → <b>1</b></div></div>
-  <div class="bul-row"><div class="bdot"></div><div class="btxt">Вариант <b>A</b> — использую часто, но не всегда → <b>6</b></div></div>
-  <div class="bul-row" style="margin-bottom:12px"><div class="bdot"></div><div class="btxt">Вариант <b>D</b> — поступлю так лишь в редких случаях → <b>4</b></div></div>
+  <div class="bul"><div class="bdot"></div><div class="btxt">C — первая реакция → <b>8</b></div></div>
+  <div class="bul"><div class="bdot"></div><div class="btxt">B — категорически не мой метод → <b>1</b></div></div>
+  <div class="bul"><div class="bdot"></div><div class="btxt">A — использую часто → <b>6</b></div></div>
+  <div class="bul" style="margin-bottom:12px"><div class="bdot"></div><div class="btxt">D — редко → <b>4</b></div></div>
   <div class="sd-row"><div class="sd-cell"></div><div class="sd-cell pl">B</div><div class="sd-cell"></div><div class="sd-cell"></div><div class="sd-cell pl">D</div><div class="sd-cell"></div><div class="sd-cell pl">A</div><div class="sd-cell"></div><div class="sd-cell pl">C</div><div class="sd-cell"></div></div>
   <div class="sd-nums"><div class="sd-num">0</div><div class="sd-num">1</div><div class="sd-num">2</div><div class="sd-num">3</div><div class="sd-num">4</div><div class="sd-num">5</div><div class="sd-num">6</div><div class="sd-num">7</div><div class="sd-num">8</div><div class="sd-num">9</div></div>
   <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--mu);margin-top:3px;margin-bottom:14px"><span>← нетипично</span><span>типично →</span></div>
   <div class="hr"></div>
-  <p style="font-size:13px;font-weight:600;margin:14px 0 10px">Как заполнять тест</p>
+  <p style="font-size:13px;font-weight:600;margin:14px 0 10px">Как заполнять в цифровой версии</p>
   <div class="how-box">
     <div class="how-row"><div class="hnum">1</div><div class="htxt"><b>Выбор.</b> Нажмите на карточку с буквой — она подсветится.</div></div>
-    <div class="how-row"><div class="hnum">2</div><div class="htxt"><b>Назначение.</b> Нажмите на нужную цифру в шкале — буква прыгнет туда.</div></div>
-    <div class="how-row"><div class="hnum">3</div><div class="htxt"><b>Замена.</b> Чтобы передумать — нажмите на букву уже внутри шкалы, она вернётся в список.</div></div>
+    <div class="how-row"><div class="hnum">2</div><div class="htxt"><b>Назначение.</b> Нажмите на ячейку над нужной цифрой — буква прыгнет туда.</div></div>
+    <div class="how-row"><div class="hnum">3</div><div class="htxt"><b>Замена.</b> Нажмите на букву в шкале — она вернётся в список.</div></div>
   </div>
-  <p style="font-size:12px;font-weight:600;color:var(--m);margin:14px 0 8px;text-transform:uppercase;letter-spacing:1px">Попробуйте прямо здесь:</p>
-  <div style="background:var(--bg);border-radius:10px;padding:14px;margin-bottom:14px">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:10px" id="demo-tiles">
-      <div id="dt-A" onclick="dSel('A')" style="padding:9px 11px;border-radius:8px;border:2px solid var(--br);background:var(--w);cursor:pointer;transition:all .15s;position:relative"><div style="font-size:12px;font-weight:700;color:var(--m);margin-bottom:2px">A)</div><div style="font-size:11px;line-height:1.4;color:var(--mu)">Задавая вопросы, выясните причину.</div></div>
-      <div id="dt-B" onclick="dSel('B')" style="padding:9px 11px;border-radius:8px;border:2px solid var(--br);background:var(--w);cursor:pointer;transition:all .15s;position:relative"><div style="font-size:12px;font-weight:700;color:var(--m);margin-bottom:2px">B)</div><div style="font-size:11px;line-height:1.4;color:var(--mu)">Побеседуете и определите дальнейшее.</div></div>
-      <div id="dt-C" onclick="dSel('C')" style="padding:9px 11px;border-radius:8px;border:2px solid var(--br);background:var(--w);cursor:pointer;transition:all .15s;position:relative"><div style="font-size:12px;font-weight:700;color:var(--m);margin-bottom:2px">C)</div><div style="font-size:11px;line-height:1.4;color:var(--mu)">Дадите возможность решить самому.</div></div>
-      <div id="dt-D" onclick="dSel('D')" style="padding:9px 11px;border-radius:8px;border:2px solid var(--br);background:var(--w);cursor:pointer;transition:all .15s;position:relative"><div style="font-size:12px;font-weight:700;color:var(--m);margin-bottom:2px">D)</div><div style="font-size:11px;line-height:1.4;color:var(--mu)">Решите проблему вместе.</div></div>
-    </div>
-    <div style="font-size:11px;color:var(--b);background:var(--li);border-radius:6px;padding:5px 10px;margin-bottom:7px;min-height:26px" id="demo-hint">Нажмите на карточку A, B, C или D</div>
-    <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--mu);margin-bottom:4px"><span>нетипично (0)</span><span>типично (9)</span></div>
-    <div style="display:flex;border:1.5px solid var(--br);border-radius:8px;overflow:hidden" id="demo-scale"></div>
-    <div style="text-align:right;margin-top:6px"><button onclick="dReset()" style="font-size:11px;color:var(--mu);background:none;border:none;cursor:pointer;font-family:inherit;padding:0">Сбросить ↺</button></div>
-  </div>
-  <p class="mu" style="font-size:12.5px;margin-bottom:18px">Кнопка «Далее» активируется только после того, как все 4 буквы займут свои позиции.</p>
+  <p class="mu" style="font-size:12.5px;margin-bottom:18px">Кнопка «Далее» активируется только когда все 4 буквы расставлены на разные позиции.</p>
   <button class="btn" onclick="startP1()">Начать тест →</button>
 </div></div></div>
 
@@ -233,12 +203,12 @@ h2{font-size:18px;font-weight:700;margin-bottom:8px}
     <div class="sit-txt" id="sit-t"></div>
     <div class="sit-sub" id="sit-s"></div>
     <div class="tiles" id="sit-opts"></div>
-    <div class="hint-bar" id="hint-bar">Нажмите на карточку A, B, C или D — она выделится</div>
+    <div class="hint-bar" id="hint-bar">Нажмите на карточку A, B, C или D</div>
     <div class="scale-wrap">
       <div class="scale-hint"><span>← нетипично (0)</span><span>типично (9) →</span></div>
       <div class="scale-grid" id="scale"></div>
     </div>
-    <div class="ok-msg" id="ok-m">Все 4 варианта расставлены — можно продолжать!</div>
+    <div class="ok-msg" id="ok-m">Все 4 варианта расставлены!</div>
   </div>
   <div class="brow">
     <button class="bto" id="btn-pp" onclick="prevS()" style="display:none">← Назад</button>
@@ -249,21 +219,20 @@ h2{font-size:18px;font-weight:700;margin-bottom:8px}
 <!-- TRANSITION -->
 <div class="scr" id="scr-tr"><div class="wrap"><div class="card" style="margin-top:16px;text-align:center;padding:36px 28px">
   <div class="tr-ic">✓</div>
-  <h2 style="margin-bottom:10px">Часть 1 завершена</h2>
-  <p class="mu" style="margin-bottom:24px">Ваши ответы сохранены. Теперь переходим к оценке подчинённых.</p>
+  <h2 style="font-size:18px;font-weight:700;margin-bottom:10px">Часть 1 завершена</h2>
+  <p class="mu" style="margin-bottom:24px">Ваши ответы сохранены. Переходим к оценке подчинённых.</p>
   <button class="btn" onclick="toI2()">Перейти к части 2 →</button>
 </div></div></div>
 
 <!-- INSTRUCTIONS 2 -->
 <div class="scr" id="scr-i2"><div class="wrap"><div class="card" style="margin-top:8px">
   <div class="lbl">Часть 2 из 2</div>
-  <h1>Оценка подчинённых</h1>
-  <p class="mu" style="margin-bottom:14px">Выберите двух-четырёх подчинённых, имеющих разные должности или опыт работы, личные качества и социальную зрелость.</p>
-  <p class="mu" style="margin-bottom:6px">Оцените каждую характеристику по шкале:</p>
+  <h1 style="font-size:22px;font-weight:700;margin-bottom:10px">Оценка подчинённых</h1>
+  <p class="mu" style="margin-bottom:14px">Выберите 2–4 подчинённых с разным опытом и уровнем зрелости. Оцените каждого по 12 характеристикам.</p>
   <div style="background:var(--bg);border-radius:8px;padding:11px 14px;margin-bottom:14px;font-size:13px;line-height:1.9;color:var(--mu)">
     <b style="color:var(--n)">9</b> — подходит абсолютно &nbsp; <b style="color:var(--n)">7</b> — подходит вполне &nbsp; <b style="color:var(--n)">5</b> — трудно сказать &nbsp; <b style="color:var(--n)">3</b> — скорее не подходит &nbsp; <b style="color:var(--n)">1</b> — абсолютно не подходит
   </div>
-  <div class="ibox">Оцените каждого подчинённого индивидуально, затем сравните результаты.</div>
+  <div class="ibox">Вы можете написать имя или ник подчинённого — он будет отображаться в результатах.</div>
   <div class="hr"></div>
   <div class="fi"><label>Количество подчинённых</label>
     <div class="nbtns" id="nb">
@@ -273,6 +242,7 @@ h2{font-size:18px;font-weight:700;margin-bottom:8px}
       <button class="nb" data-n="4" onclick="setN(4)">4</button>
     </div>
   </div>
+  <p style="font-size:13px;color:var(--mu);margin-top:14px;margin-bottom:6px">Вы можете написать имя или ник — он будет отображаться в результатах и рекомендациях.</p>
   <div id="sn-wrap" class="sg"></div>
   <button class="btn" style="margin-top:14px" onclick="startP2()">Начать оценку →</button>
 </div></div></div>
@@ -281,8 +251,8 @@ h2{font-size:18px;font-weight:700;margin-bottom:8px}
 <div class="scr" id="scr-ass"><div class="ww" style="padding-top:12px">
   <div class="card" style="padding:0;overflow:hidden">
     <div style="padding:12px 18px;background:var(--li);border-bottom:1px solid var(--br);font-size:12px;color:var(--mu)">
-      <b>Шкала:</b> 1 — не подходит · 3 — скорее не подходит · 5 — трудно сказать · 7 — подходит вполне · 9 — подходит абсолютно &nbsp;
-      <span class="ctag tnr">НР</span> навыки работы &nbsp; <span class="ctag tsz">СЗ</span> социальная зрелость
+      <b>Шкала:</b> 1 — не подходит · 5 — трудно сказать · 9 — подходит абсолютно &nbsp;
+      <span class="ctag tnr">НР</span> навыки работы &nbsp; <span class="ctag tsz">СЗ</span> социальная зрелость &nbsp; <span class="ctag tnt">НЗ</span> новые задачи
     </div>
     <div style="overflow-x:auto"><table class="at"><thead><tr id="ass-h"></tr></thead><tbody id="ass-b"></tbody></table></div>
   </div>
@@ -292,94 +262,170 @@ h2{font-size:18px;font-weight:700;margin-bottom:8px}
 <!-- RESULTS -->
 <div class="scr" id="scr-res"><div class="wrap" style="padding-top:12px">
   <div id="res-hd" class="rh"><div class="rl">Результаты теста</div><h2 id="res-n"></h2><p id="res-d"></p></div>
-  <div class="rnav">
-    <button class="rnb on" data-r="0" onclick="goR(0)">① Ваш стиль</button>
-    <button class="rnb" data-r="1" onclick="goR(1)">② Подчинённые</button>
-    <button class="rnb" data-r="2" onclick="goR(2)">③ Разрыв</button>
-    <button class="rnb" data-r="3" onclick="goR(3)">④ Рекомендации</button>
-  </div>
+  <div class="rnav" id="res-nav"></div>
   <div id="r-0"></div>
   <div id="r-1" style="display:none"></div>
-  <div id="r-2" style="display:none"></div>
-  <div id="r-3" style="display:none"></div>
-  <div style="display:flex;gap:10px;margin-top:10px">
-    <button class="print-btn" id="btn-pdf" onclick="savePDF()" style="flex:1">&#128462; Сохранить как PDF</button>
-    <button class="print-btn" onclick="window.print()" style="flex:1">&#128438; Распечатать</button>
+  <div class="pdf-btns">
+    <button class="pbtn" id="btn-pdf" onclick="savePDF()">&#128196; Сохранить как PDF</button>
+    <button class="pbtn" onclick="window.print()">&#128438; Распечатать</button>
   </div>
-  <div id="pdf-status" style="display:none;font-size:12px;color:var(--mu);text-align:center;margin-top:8px;padding:6px">Формируется PDF...</div>
+  <div id="pdf-status">Формируется PDF...</div>
 </div></div>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <script>
+// ── DATA ─────────────────────────────────────────────────────────
 const SI={
-  'ИП':{r:'I',c:'#c0392b',f:'Инструктирование (Directing)',d:'Вы склонны чётко ставить задачи, объяснять как и что делать, осуществлять постоянный контроль. Эффективен с новыми или неуверенными сотрудниками.',long:'Инструктирование (Directing). Информация, распоряжения и инструкции. Руководитель чётко ставит задачи, объясняет что и как делать, осуществляет постоянный контроль выполнения.',t:['Чётко формулируйте задачу: что, как и в какие сроки','Осуществляйте постоянный мониторинг и контроль','Устанавливайте чёткие критерии оценки результата']},
-  'РП':{r:'II',c:'#c87300',f:'Решение проблем совместно (Coaching)',d:'Вы склонны вовлекать сотрудника в обсуждение и совместно искать решения. Эффективен с мотивированными, но неопытными сотрудниками.',long:'Решение проблем совместно (Coaching). Решение проблем, взаимное общение, ориентация на результат. Руководитель вовлекает сотрудника в обсуждение и совместно вырабатывает решение.',t:['Вовлекайте подчинённого в обсуждение — он должен быть активным участником','Выработайте решение совместно, не навязывайте своё','Составляйте план действий вместе']},
-  'ПП':{r:'III',c:'#1a7a3c',f:'Психологическая поддержка (Supporting)',d:'Вы склонны мотивировать, поддерживать уверенность, вести равноправный диалог. Эффективен с опытными, но неуверенными сотрудниками.',long:'Психологическая поддержка (Supporting). Поведение ориентировано на человека, доверие. Руководитель мотивирует, верит в способности сотрудника и поддерживает его уверенность.',t:['Выясняйте мотивы: задавайте вопрос «Почему?»','Ведите диалог на равных (50/50)','Совместно определяйте конечную цель','Связывайте личные цели с возможностями компании']},
-  'ДГ':{r:'IV',c:'#6c3483',f:'Делегирование (Delegating)',d:'Вы склонны доверять, ставить цель и давать свободу действий. Эффективен с опытными и мотивированными сотрудниками.',long:'Делегирование (Delegating). Передача полномочий, доверие и обратная связь. Руководитель даёт сотруднику самостоятельность, определяет цель и остаётся доступным для поддержки.',t:['Чётко обозначайте конечную цель, а не способ её достижения','Договаривайтесь о форме и периодичности обратной связи','Поддерживайте только если сотрудник сам об этом просит','Решение принимает подчинённый — ответственность несёт руководитель']}
+  'ИП':{r:'I',  c:'#c0392b',f:'Инструктирование (Directing)',
+    desc:'Информация, распоряжения и инструкции. Руководитель чётко ставит задачи, объясняет что и как делать, осуществляет постоянный контроль выполнения.',
+    about:'Вы склонны чётко ставить задачи, объяснять как и что делать, осуществлять постоянный контроль. Это формирует структуру и предсказуемость.',
+    you:['Давать подчинённому чёткую инструкцию: что, как и в какие сроки','Устанавливать промежуточные точки контроля','Объяснять не только что делать, но и почему именно так'],
+    works:'Новые сотрудники, сложные или кризисные задачи, ситуации с низкой компетентностью в команде. Эффективен когда нужен быстрый результат в условиях неопределённости.',
+    diff:[
+      {sc:'РП',why:'Опытный и мотивированный сотрудник, которому нужно участие в выработке решений. Постоянные директивы снижают его вовлечённость.',tips:['Добавьте диалог: объясняйте логику решений, спрашивайте мнение','Вырабатывайте план совместно']},
+      {sc:'ПП',why:'Такой сотрудник знает как работать, но ему нужна поддержка и вера в него. Жёсткий контроль воспринимается как недоверие.',tips:['Ведите диалог на равных','Выясняйте мотивы: задавайте вопрос «Почему это важно для тебя?»']},
+      {sc:'ДГ',why:'Высокозрелый сотрудник не нуждается в инструкциях. Жёсткий контроль воспринимается как недоверие и тормозит его.',tips:['Ставьте цель — давайте свободу выбора пути','Меньше точек контроля, больше точек мотивации']}
+    ],
+    bs:{ti:'Делегирование (Узкое горлышко)',txt:'Если вы склонны к стилю ИП, ваша зона риска — гиперконтроль. Руководитель становится узким местом, через которое проходят все решения.',q:'Склонен ли я замыкать задачи на себе из-за страха потери качества? Не становлюсь ли я тормозом для развития?'},
+    tips:['Чётко формулируйте задачу: что, как и в какие сроки','Осуществляйте мониторинг и контроль','Устанавливайте чёткие критерии оценки результата']},
+  'РП':{r:'II', c:'#c87300',f:'Решение проблем совместно (Coaching)',
+    desc:'Решение проблем, взаимное общение, ориентация на результат. Руководитель вовлекает сотрудника в обсуждение и совместно вырабатывает решение.',
+    about:'Вам нравится вовлекать подчинённого в обсуждение, слышать его точку зрения и вырабатывать решение совместно. Вы не диктуете — вы ищете лучший путь вместе. Это формирует атмосферу доверия и причастности.',
+    you:['Вовлекать подчинённого в обсуждение — он активный участник, а не исполнитель','Вырабатывать решение совместно и не навязывать своё','Составлять план действий вместе, опираясь на мнение сотрудника'],
+    works:'Сотрудники с потенциалом и мотивацией, но ещё недостаточным опытом для полной самостоятельности. Также эффективен при появлении новых задач — когда человек уже достаточно зрел, чтобы думать самостоятельно, но задача новая и требует совместного осмысления.',
+    diff:[
+      {sc:'ИП',why:'Человек, который ещё не знает «как», не может участвовать в совместной выработке решений — ему нужна чёткая инструкция. Попытка вовлечь его в обсуждение создаёт тревогу и ощущение брошенности.',tips:['Давайте чёткие инструкции: что, как, в какие сроки','Устанавливайте короткие промежуточные точки контроля','Объясняйте не только «что делать», но и «почему именно так»']},
+      {sc:'ПП',why:'Такой сотрудник умеет работать самостоятельно, но ему не хватает веры в себя или мотивации. Совместный анализ задач воспринимается им как недоверие к его компетентности.',tips:['Выясняйте мотивы: чаще задавайте вопрос «Почему это важно для тебя?»','Ведите диалог на равных — не как руководитель к подчинённому, а 50/50','Связывайте его личные цели с задачами и возможностями компании']},
+      {sc:'ДГ',why:'Высокозрелый сотрудник не нуждается в совместном обсуждении каждого шага. Это может восприниматься как недоверие к его профессионализму или лишняя трата времени.',tips:['Ставьте цель — и давайте свободу выбора пути к ней','Меньше точек контроля, но больше точек мотивации — интересуйтесь результатом, а не процессом','Договоритесь о форме и периодичности обратной связи заранее']}
+    ],
+    bs:{ti:'Контекст управления (Кризис vs Стабильность)',txt:'Стиль РП идеально работает при стабильном росте, но в кризисных или срочных ситуациях может не хватить директивности.',q:'Насколько мой стиль адаптивен? Умею ли я переключаться с режима совместного обсуждения на быстрые директивные решения в кризис?'},
+    tips:['Вовлекайте подчинённого в обсуждение — он должен быть активным участником','Выработайте решение совместно, не навязывайте своё','Составляйте план действий вместе']},
+  'ПП':{r:'III',c:'#1a7a3c',f:'Психологическая поддержка (Supporting)',
+    desc:'Поведение ориентировано на человека, доверие. Руководитель мотивирует, верит в способности сотрудника и поддерживает его уверенность.',
+    about:'Вы склонны мотивировать, поддерживать уверенность сотрудника и вести равноправный диалог. Вы верите в людей и создаёте атмосферу доверия. Это формирует высокую лояльность и вовлечённость.',
+    you:['Выяснять мотивы: задавать вопрос «Почему это важно для тебя?»','Вести диалог на равных — не как руководитель к подчинённому, а 50/50','Связывать личные цели сотрудника с возможностями компании'],
+    works:'Опытные, но неуверенные или демотивированные сотрудники. Ситуации, требующие восстановления доверия или переосмысления целей.',
+    diff:[
+      {sc:'ИП',why:'Поддержка без чётких инструкций не помогает: человек не знает что делать, и вдохновение без плана не даёт результата.',tips:['Добавьте структуру: конкретные задачи, дедлайны, критерии результата','Поддержку оставьте — но она не должна заменять инструкцию']},
+      {sc:'РП',why:'Мотивированный, но не очень опытный сотрудник нуждается не только в поддержке, но и в совместном плане действий.',tips:['Добавьте к поддержке конкретный анализ ситуации','Вырабатывайте решения вместе — не только вдохновляйте, но и направляйте']},
+      {sc:'ДГ',why:'Высококвалифицированный сотрудник воспринимает избыточную поддержку как сигнал недоверия.',tips:['Передавайте полномочия полностью — ставьте цель, а не способ её достижения','Договоритесь о форме отчётности и дайте сотруднику работать']}
+    ],
+    bs:{ti:'Авторитет и развитие (Твёрдость vs Лояльность)',txt:'Стиль ПП высоко оценивается коллегами за комфорт и человечность, но может «проседать» в ситуациях, требующих непопулярных решений.',q:'Хватает ли мне управленческой воли проявить твёрдость в критический момент, или моё желание сохранить климат мешает достижению целей?'},
+    tips:['Выясняйте мотивы: задавайте вопрос «Почему?»','Ведите диалог на равных (50/50)','Совместно определяйте конечную цель','Связывайте личные цели с возможностями компании']},
+  'ДГ':{r:'IV', c:'#6c3483',f:'Делегирование (Delegating)',
+    desc:'Передача полномочий, доверие и обратная связь. Руководитель даёт сотруднику самостоятельность, определяет цель и остаётся доступным для поддержки.',
+    about:'Вы склонны доверять, ставить цель и давать свободу действий. Вы верите в компетентность своих людей и предпочитаете не вмешиваться без необходимости. Это создаёт у сотрудников высокое чувство ответственности.',
+    you:['Чётко обозначать конечную цель, а не способ её достижения','Договариваться о форме и периодичности обратной связи заранее','Поддерживать только если сотрудник сам об этом просит'],
+    works:'Высококвалифицированные и мотивированные сотрудники, хорошо знакомые с задачей. Люди, которые уже доказали результат.',
+    diff:[
+      {sc:'ИП',why:'Без контроля и инструкций неопытный сотрудник теряется, делает ошибки и теряет уверенность. Делегирование без готовности — это не свобода, а брошенность.',tips:['Временно верните структуру и контроль','Начните с коротких регулярных проверок, пока сотрудник не наберёт уверенность']},
+      {sc:'РП',why:'Мотивированный, но менее опытный сотрудник нуждается в диалоге и совместной выработке решений — а не в полной свободе.',tips:['Верните регулярные встречи и совместный анализ задач','Не делегируйте полностью — убедитесь, что сотрудник понимает задачу']},
+      {sc:'ПП',why:'Неуверенный сотрудник без поддержки и обратной связи воспринимает полную свободу как безразличие руководителя.',tips:['Добавьте регулярную обратную связь','Поддержка нужна не как контроль, а как сигнал: «ты не один»']}
+    ],
+    bs:{ti:'Авторитет и развитие (Твёрдость vs Лояльность)',txt:'Стиль ДГ создаёт высокий комфорт для зрелых сотрудников, но может давать сбой в кризисных ситуациях.',q:'Умею ли я вовремя вернуть контроль, когда ситуация этого требует? Не путаю ли я делегирование с безразличием к процессу?'},
+    tips:['Чётко обозначайте конечную цель, а не способ её достижения','Договаривайтесь о форме и периодичности обратной связи','Поддерживайте только если сотрудник сам об этом просит','Решение принимает подчинённый — ответственность несёт руководитель']}
 };
+
 const SITS=[
   {id:1,t:'Ваш подчинённый, работающий уже год в Вашей фирме, чувствует себя неуверенно в работе, несмотря на то, что он имел большой опыт работы в другой фирме.',s:'Поведение руководителя:',o:{A:'Вы предоставите ему возможность спокойно работать, и уверены, что со временем от него будет польза.',B:'Вы выясните, необходима ли ему помощь, и учтёте его желания.',C:'Проведёте беседу о новой работе и выясните, в чём причина неуверенности.',D:'Будете беседовать об организации работы подчинённого.'},k:{ИП:'D',РП:'B',ПП:'C',ДГ:'A'}},
   {id:2,t:'Ваш сотрудник получил хорошее обучение и имеет большой опыт работы, но у него есть проблемы с выполнением своих обязанностей. Вы знаете, что раньше он справлялся со своими проблемами сам.',s:'Поведение руководителя:',o:{A:'Вы расскажете, как ему решить свою проблему.',B:'В беседе выясните, хочет ли сотрудник представить свою проблему.',C:'Спросите, есть ли желание у сотрудника решать проблему вместе с Вами.',D:'Подождёте, сможет ли он решить проблему сам.'},k:{ИП:'A',РП:'C',ПП:'B',ДГ:'D'}},
   {id:3,t:'Ваш подчинённый получил новое задание, при выполнении которого он делает ошибки, злится и у него падает настроение. Вы уже говорили об этом, но изменений не произошло.',s:'Поведение руководителя:',o:{A:'Задавая вопросы, выясните, почему он относится к отдельным ошибкам так серьёзно.',B:'Побеседуете и определите, как ему необходимо вести себя в дальнейшем.',C:'Дадите ему возможность самому решить проблему.',D:'Представите этот вопрос как проблему, которую Вам необходимо решить вместе.'},k:{ИП:'B',РП:'D',ПП:'A',ДГ:'C'}},
-  {id:4,t:'Ваш подчинённый, несмотря на большой опыт работы, определяет приоритеты заданий неверно. Вы беседовали на эту тему, но ситуация не изменилась.',s:'Поведение руководителя:',o:{A:'Проведёте беседу и постараетесь убедить его, что определение приоритета выполняемой работы имеет значение для фирмы.',B:'Объясните, как определить приоритетность выполняемых задач.',C:'Скажете, что эта проблема разрешима, и, если у него будет больше информации, он справится с ней сам.',D:'Не будете вмешиваться, так как он сам может решить этот вопрос.'},k:{ИП:'B',РП:'A',ПП:'C',ДГ:'D'}},
-  {id:5,t:'Ваш подчинённый, работающий у Вас 5 лет, обращается к Вам с неожиданной проблемой и просит Вас помочь.',s:'Ваш ответ:',o:{A:'«У меня нет решения этой проблемы, я готов побеседовать на эту тему и уверен, что ты можешь принять решение лучше меня».',B:'«Обычно ты решаешь такие проблемы сам, но с тобой приятно беседовать, посмотрим, что мы можем сделать».',C:'«Объясни, в чём дело, и тогда определим, что мы можем сделать».',D:'«Обычно ты сам решаешь такие проблемы. Я выскажу своё мнение, и тогда поговорим, подойдёт ли это решение».'},k:{ИП:'D',РП:'C',ПП:'B',ДГ:'A'}},
+  {id:4,t:'Ваш подчинённый, несмотря на большой опыт работы, определяет приоритеты заданий неверно. Вы беседовали на эту тему, но ситуация не изменилась.',s:'Поведение руководителя:',o:{A:'Проведёте беседу и постараетесь убедить его, что определение приоритета имеет значение для фирмы.',B:'Объясните, как определить приоритетность выполняемых задач.',C:'Скажете, что эта проблема разрешима, и, если у него будет больше информации, он справится с ней сам.',D:'Не будете вмешиваться, так как он сам может решить этот вопрос.'},k:{ИП:'B',РП:'A',ПП:'C',ДГ:'D'}},
+  {id:5,t:'Ваш подчинённый, работающий у Вас 5 лет, обращается к Вам с неожиданной проблемой и просит Вас помочь.',s:'Ваш ответ:',o:{A:'«У меня нет решения этой проблемы, я готов побеседовать и уверен, что ты можешь принять решение лучше меня».',B:'«Обычно ты решаешь такие проблемы сам, но с тобой приятно беседовать, посмотрим, что мы можем сделать».',C:'«Объясни, в чём дело, и тогда определим, что мы можем сделать».',D:'«Обычно ты сам решаешь такие проблемы. Я выскажу своё мнение, и тогда поговорим, подойдёт ли это решение».'},k:{ИП:'D',РП:'C',ПП:'B',ДГ:'A'}},
   {id:6,t:'Ваш подчинённый получил новое задание месяц назад, но чувствует себя очень неуверенно.',s:'Поведение руководителя:',o:{A:'Выясните, в чём дело, и проинформируете о том, что от него требуется, и как выполнить задание.',B:'Скажете, что верите в его способности, которые помогут ему в новом положении.',C:'Дадите ему возможность справиться самому, так как Вы уверены, что он может справиться сам.',D:'Выясните проблему и поговорите, каким образом вам вместе её решить.'},k:{ИП:'A',РП:'D',ПП:'B',ДГ:'C'}},
   {id:7,t:'Сотрудники сказали Вам, что один из опытных работников не справляется со своими обязанностями.',s:'Поведение руководителя:',o:{A:'Выясните сразу, в чём дело, и объясните, каким образом действовать дальше.',B:'Встретитесь сразу, выясните, какие у него проблемы, и можете ли вы решить их вместе.',C:'Спросите, что он думает об этой проблеме.',D:'Не будете вмешиваться и дадите ему возможность самому исправить свой результат в работе.'},k:{ИП:'A',РП:'B',ПП:'C',ДГ:'D'}},
   {id:8,t:'Ваш новый работник хорошо справляется с работой, но у него возникают проблемы с некоторыми клиентами.',s:'Поведение руководителя:',o:{A:'Выясните, видит ли он проблему, и объясните, как лучше достичь контакта с клиентом.',B:'Подождёте некоторое время — может, он сам обратится к Вам с этой проблемой.',C:'Рассмотрите проблему вместе и предложите вместе найти её решение.',D:'Встретитесь, чтобы выяснить, что он думает о своей работе.'},k:{ИП:'A',РП:'C',ПП:'D',ДГ:'B'}},
-  {id:9,t:'Ваш отдел получил новое задание, но Вы не уверены, все ли справятся, хотя раньше Ваши подчинённые достигали хороших результатов.',s:'Поведение руководителя:',o:{A:'Переждёте время, чтобы понаблюдать, справляются ли подчинённые.',B:'Встретитесь с подчинёнными и поговорите о решении возможных проблем.',C:'Скажете, что уверены, что они справятся, но выясните, в чём необходима поддержка с Вашей стороны.',D:'Объясните, что требуется от работников, и каким образом выполнить поставленную задачу.'},k:{ИП:'D',РП:'C',ПП:'B',ДГ:'A'}},
+  {id:9,t:'Ваш отдел получил новое задание, но Вы не уверены, все ли справятся, хотя раньше Ваши подчинённые достигали хороших результатов.',s:'Поведение руководителя:',o:{A:'Переждёте время, чтобы понаблюдать, справляются ли подчинённые.',B:'Встретитесь с подчинёнными и поговорите о решении возможных проблем.',C:'Скажете, что уверены, что они справятся, но выясните, в чём необходима поддержка.',D:'Объясните, что требуется от работников, и каким образом выполнить поставленную задачу.'},k:{ИП:'D',РП:'C',ПП:'B',ДГ:'A'}},
   {id:10,t:'У Вас новый работник, переведённый из другого отдела. Он справляется хорошо, но иногда делает ошибки и не всегда уверен в себе.',s:'Поведение руководителя:',o:{A:'Дадите возможность спокойно работать, но будете готовы вовремя вмешаться.',B:'Выясните о новых задачах и обратите внимание на сложные ситуации, решение которых найдёте вместе.',C:'Расскажете о новых задачах и обратите внимание на то, что могут возникнуть сложные ситуации.',D:'Расскажете, с какими задачами он справляется хорошо, и объясните, как лучше выполнить другие.'},k:{ИП:'D',РП:'C',ПП:'B',ДГ:'A'}},
-  {id:11,t:'В отделе, за который Вы несёте ответственность, возникли проблемы сотрудничества между работниками. Раньше такие проблемы решались без Вашей помощи.',s:'Поведение руководителя:',o:{A:'Объясните группе, как решить проблему, чтобы не пострадала работа.',B:'Встретитесь со всеми и объясните, что проблемы необходимо решать конструктивно и вместе с Вами.',C:'Выскажете работникам своё мнение и предложите свою помощь каждому, чтобы никого не обидеть.',D:'Сообщите, что с Вашей точки зрения проблема должна решаться ими, и не будете вмешиваться до тех пор, пока это возможно.'},k:{ИП:'A',РП:'B',ПП:'C',ДГ:'D'}},
+  {id:11,t:'В отделе, за который Вы несёте ответственность, возникли проблемы сотрудничества между работниками. Раньше такие проблемы решались без Вашей помощи.',s:'Поведение руководителя:',o:{A:'Объясните группе, как решить проблему, чтобы не пострадала работа.',B:'Встретитесь со всеми и объясните, что проблемы необходимо решать конструктивно и вместе с Вами.',C:'Выскажете работникам своё мнение и предложите свою помощь каждому, чтобы никого не обидеть.',D:'Сообщите, что с Вашей точки зрения проблема должна решаться ими, и не будете вмешиваться, пока это возможно.'},k:{ИП:'A',РП:'B',ПП:'C',ДГ:'D'}},
   {id:12,t:'У Вас подчинённые, которые имеют большой опыт работы. Но, в связи с новыми задачами, возникли кое-какие внутренние проблемы.',s:'Поведение руководителя:',o:{A:'Поговорите с подчинёнными, каким образом с Вашей точки зрения решить эту проблему.',B:'Предложите решить проблему вместе.',C:'Поговорите с подчинёнными о проблеме и убедите их решить её самим.',D:'Не будете ничего выяснять, а понаблюдаете со стороны.'},k:{ИП:'C',РП:'B',ПП:'A',ДГ:'D'}}
 ];
+
 const CRIT=[
-  {id:1,t:'Способен принимать решения обоснованно и самостоятельно.',tp:'nr'},
-  {id:2,t:'Переносит конфликты и стрессы.',tp:'sz'},
-  {id:3,t:'Знания своей области работы, продукции и клиентов достаточны для выполнения работы.',tp:'nr'},
-  {id:4,t:'Не требуется чужая поддержка, стремится к самостоятельности.',tp:'sz'},
-  {id:5,t:'Раньше занимался подобной работой.',tp:'nr'},
-  {id:6,t:'Относится к коллегам и работе позитивно.',tp:'sz'},
-  {id:7,t:'Планирует свою работу конкретно, исходя из поставленных целей.',tp:'nr'},
-  {id:8,t:'Всегда ожидает нового вызова и ответственности.',tp:'sz'},
-  {id:9,t:'Не требуется постоянный контроль, способен работать самостоятельно.',tp:'nr'},
+  {id:1, t:'Способен принимать решения обоснованно и самостоятельно.',tp:'nr'},
+  {id:2, t:'Переносит конфликты и стрессы.',tp:'sz'},
+  {id:3, t:'Знания своей области работы, продукции и клиентов достаточны для выполнения работы.',tp:'nr'},
+  {id:4, t:'Не требуется чужая поддержка, стремится к самостоятельности.',tp:'sz'},
+  {id:5, t:'Раньше занимался подобной работой.',tp:'nr'},
+  {id:6, t:'Относится к коллегам и работе позитивно.',tp:'sz'},
+  {id:7, t:'Планирует свою работу конкретно, исходя из поставленных целей.',tp:'nr'},
+  {id:8, t:'Всегда ожидает нового вызова и ответственности.',tp:'sz'},
+  {id:9, t:'Не требуется постоянный контроль, способен работать самостоятельно.',tp:'nr'},
   {id:10,t:'Работает целенаправленно и доводит всё до конца.',tp:'sz'},
   {id:11,t:'Умеет использовать технику, обладает хорошими профессиональными навыками.',tp:'nr'},
-  {id:12,t:'Уравновешен и верит в себя.',tp:'sz'}
+  {id:12,t:'Уравновешен и верит в себя.',tp:'sz'},
+  {id:13,t:'Получил новую задачу или зону ответственности в последние 3 месяца.',tp:'nt'},
+  {id:14,t:'Уровень задач заметно вырос по сравнению с предыдущим периодом.',tp:'nt'}
 ];
 
-let S={name:'',email:'',ns:2,sn:['Подчинённый 1','Подчинённый 2','Подчинённый 3','Подчинённый 4'],p1:{},cs:0,placed:{},sel:null,p2:{},res:null};
+const GAP_WHY={
+  'ИП->РП':'Сотрудник нуждается в чётких инструкциях и контроле, но вместо этого получает вовлечение в обсуждение. Для человека, который ещё не знает «как» — это создаёт тревогу и ощущение брошенности.',
+  'ИП->ПП':'Сотрудник нуждается в структуре и руководстве, но получает лишь поддержку и доверие. Без конкретных инструкций он теряется даже при высокой мотивации.',
+  'ИП->ДГ':'Сотрудник нуждается в постоянном контроле, но получает полную свободу действий. Высокий риск ошибок, срыва сроков и потери мотивации.',
+  'РП->ИП':'Сотрудник готов к диалогу и участию в решениях, но получает только директивы. Это снижает вовлечённость и ощущение ценности его мнения.',
+  'РП->ПП':'Сотрудник нуждается в совместном обсуждении и плане, но получает лишь поддержку без конкретных шагов.',
+  'РП->ДГ':'Сотрудник нуждается в обсуждении и поддержке, но получает полную самостоятельность раньше, чем готов к ней.',
+  'ПП->ИП':'Опытный и самостоятельный сотрудник получает жёсткие инструкции и контроль. Это воспринимается как недоверие — мотивация падает.',
+  'ПП->РП':'Сотрудник нуждается в мотивации и доверии, но вместо этого получает совместный анализ задач, который воспринимается как лишняя трата времени.',
+  'ПП->ДГ':'Неуверенный или демотивированный сотрудник получает полную свободу без поддержки. Без веры руководителя в него — он не поверит в себя сам.',
+  'ДГ->ИП':'Высокозрелый сотрудник получает жёсткий контроль — это разрушает доверие, гасит инициативу.',
+  'ДГ->РП':'Самостоятельный сотрудник втягивается в лишние обсуждения вместо того, чтобы действовать.',
+  'ДГ->ПП':'Готовый к самостоятельности сотрудник получает поддержку вместо свободы. Сигнал: «тебе не доверяют».'
+};
+const GAP_ACT={
+  'ИП->РП':'Временно перейдите к стилю ИП: дайте чёткие инструкции, установите короткие точки контроля. По мере роста уверенности постепенно добавляйте диалог.',
+  'ИП->ПП':'Добавьте структуру: чёткие задачи, дедлайны, критерии результата. Поддержку оставьте, но она не должна заменять инструкцию.',
+  'ИП->ДГ':'Срочно верните структуру и контроль. Начните с коротких регулярных проверок.',
+  'РП->ИП':'Добавьте диалог: объясняйте решения, спрашивайте мнение сотрудника, вырабатывайте план совместно.',
+  'РП->ПП':'Проводите регулярные встречи, обсуждайте задачи, вырабатывайте решения вместе.',
+  'РП->ДГ':'Верните регулярные встречи и совместный анализ. Не делегируйте полностью — убедитесь, что сотрудник понимает задачу.',
+  'ПП->ИП':'Постепенно снижайте директивность, добавляйте диалог и давайте больше свободы там, где уже доказан результат.',
+  'ПП->РП':'Меньше совместного анализа, больше веры в сотрудника. Скажите ему, что доверяете его профессионализму.',
+  'ПП->ДГ':'Добавьте регулярную обратную связь. Поддержка нужна не как контроль, а как сигнал: «ты не один».',
+  'ДГ->ИП':'Постепенно передавайте полномочия. Начните с одной зоны ответственности.',
+  'ДГ->РП':'Дайте больше свободы и доверяйте решениям. Ваша роль — задать цель и убрать препятствия.',
+  'ДГ->ПП':'Делегируйте полностью. Договоритесь о форме отчётности и дайте сотруднику работать.'
+};
 
-function pb(l,c,p){const w=document.getElementById('pb-wrap');if(p==null){w.style.display='none';return;}w.style.display='block';document.getElementById('pb-lbl').textContent=l;document.getElementById('pb-cnt').textContent=c;document.getElementById('pb-fill').style.width=p+'%';}
+// ── STATE ─────────────────────────────────────────────────────────
+let S={name:'',ns:2,sn:['Подчинённый 1','Подчинённый 2','Подчинённый 3','Подчинённый 4'],p1:{},cs:0,placed:{},sel:null,p2:{},res:null};
+
+// ── UTILS ─────────────────────────────────────────────────────────
+function pb(l,c,p){const w=document.getElementById('pb-wrap');if(p==null){w.style.display='none';return;}w.style.display='block';document.getElementById('pb-lbl').textContent=l||'';document.getElementById('pb-cnt').textContent=c||'';document.getElementById('pb-fill').style.width=p+'%';}
 function show(id){document.querySelectorAll('.scr').forEach(s=>s.classList.remove('on'));document.getElementById(id).classList.add('on');window.scrollTo(0,0);}
+function lvl(v,max){const p=v/max;if(p<0.35)return{l:'низкий',c:'#991b1b'};if(p<0.65)return{l:'средний',c:'#92400e'};return{l:'высокий',c:'#065f46'};}
+function gapType(dom,sec,st){const p=st.split('/');if(p.includes(dom))return'match';if(p.includes(sec))return'close';return'gap';}
+
+// ── REGISTER ──────────────────────────────────────────────────────
 function updReg(){const n=document.getElementById('in-n').value.trim(),c=document.getElementById('cb-c').checked;document.getElementById('btn-reg').disabled=!(n&&c);}
 function toI1(){S.name=document.getElementById('in-n').value.trim();show('scr-i1');}
-function startP1(){S.cs=0;S.placed={};S.sel=null;renderSit();show('scr-sit');}
 
+// ── PART 1 ────────────────────────────────────────────────────────
+function startP1(){S.cs=0;S.placed={};S.sel=null;renderSit();show('scr-sit');}
 function renderSit(){
   const s=SITS[S.cs];
-  pb('Часть 1 — Стиль руководства',`${S.cs+1} / ${SITS.length}`,(S.cs/SITS.length)*100);
+  pb('Часть 1',`${S.cs+1} / ${SITS.length}`,(S.cs/SITS.length)*100);
   document.getElementById('sit-b').textContent='Ситуация '+s.id;
   document.getElementById('sit-t').textContent=s.t;
   document.getElementById('sit-s').textContent=s.s;
   const saved=S.p1[s.id];if(saved){S.placed={...saved};}else{S.placed={};}
-  S.sel=null;
-  buildTiles(s);buildScale();updateHint();checkDone();
+  S.sel=null;buildTiles(s);buildScale();updateHint();checkDone();
   document.getElementById('btn-np').textContent=S.cs<SITS.length-1?'Далее →':'Завершить часть 1 →';
   document.getElementById('btn-pp').style.display=S.cs>0?'inline-block':'none';
 }
-
 function buildTiles(s){
   const w=document.getElementById('sit-opts');w.innerHTML='';
   ['A','B','C','D'].forEach(l=>{
     const d=document.createElement('div');
     const isP=S.placed[l]!=null,isSel=S.sel===l;
     d.className='tile'+(isP?' placed':'')+(isSel?' sel':'');
-    d.id='t-'+l;
     d.innerHTML='<div class="tl">'+l+')</div><div class="tt">'+s.o[l]+'</div>';
     if(isP){const b=document.createElement('div');b.className='tbadge';b.textContent=S.placed[l];d.appendChild(b);}
     d.onclick=()=>selTile(l);
     w.appendChild(d);
   });
 }
-
 function buildScale(){
   const sc=document.getElementById('scale');sc.innerHTML='';
   for(let n=0;n<=9;n++){
@@ -390,52 +436,44 @@ function buildScale(){
     cell.appendChild(top);cell.appendChild(bot);sc.appendChild(cell);
   }
 }
-
-function selTile(l){
-  if(S.placed[l]!=null){delete S.placed[l];buildScale();}
-  S.sel=(S.sel===l)?null:l;
-  buildTiles(SITS[S.cs]);updateHint();checkDone();
-}
-
+function selTile(l){if(S.placed[l]!=null){delete S.placed[l];buildScale();}S.sel=(S.sel===l)?null:l;buildTiles(SITS[S.cs]);updateHint();checkDone();}
 function clickCell(n){
-  const existing=Object.keys(S.placed).find(k=>S.placed[k]===n);
-  if(S.sel){
-    if(existing&&existing!==S.sel)delete S.placed[existing];
-    if(S.placed[S.sel]!=null)delete S.placed[S.sel];
-    S.placed[S.sel]=n;S.sel=null;
-  }else if(existing){delete S.placed[existing];S.sel=existing;}
+  const ex=Object.keys(S.placed).find(k=>S.placed[k]===n);
+  if(S.sel){if(ex&&ex!==S.sel)delete S.placed[ex];if(S.placed[S.sel]!=null)delete S.placed[S.sel];S.placed[S.sel]=n;S.sel=null;}
+  else if(ex){delete S.placed[ex];S.sel=ex;}
   buildTiles(SITS[S.cs]);buildScale();updateHint();checkDone();
 }
-
-function updateHint(){
-  const h=document.getElementById('hint-bar'),cnt=Object.keys(S.placed).length;
-  if(S.sel){h.textContent='Теперь нажмите на цифру в шкале, чтобы поставить вариант '+S.sel;}
-  else if(cnt===0){h.textContent='Нажмите на карточку A, B, C или D — она выделится';}
-  else if(cnt<4){h.textContent='Расставлено '+cnt+' из 4. Выберите следующую карточку.';}
-  else{h.textContent='Все 4 варианта расставлены!';}
-}
-
-function checkDone(){
-  const ok=Object.keys(S.placed).length===4;
-  document.getElementById('btn-np').disabled=!ok;
-  document.getElementById('ok-m').classList.toggle('on',ok);
-}
-
+function updateHint(){const h=document.getElementById('hint-bar'),cnt=Object.keys(S.placed).length;if(S.sel){h.textContent='Теперь нажмите на ячейку над нужной цифрой, чтобы поставить вариант '+S.sel;}else if(cnt===0){h.textContent='Нажмите на карточку A, B, C или D';}else if(cnt<4){h.textContent='Расставлено '+cnt+' из 4. Выберите следующую карточку.';}else{h.textContent='Все 4 варианта расставлены!';}}
+function checkDone(){const ok=Object.keys(S.placed).length===4;document.getElementById('btn-np').disabled=!ok;document.getElementById('ok-m').classList.toggle('on',ok);}
 function nextS(){S.p1[SITS[S.cs].id]={...S.placed};if(S.cs<SITS.length-1){S.cs++;S.placed={};S.sel=null;renderSit();}else{pb(null,null,null);show('scr-tr');}}
 function prevS(){S.p1[SITS[S.cs].id]={...S.placed};if(S.cs>0){S.cs--;S.placed={};S.sel=null;renderSit();}}
+
+// ── PART 2 ────────────────────────────────────────────────────────
 function toI2(){renderSnSetup();pb(null,null,null);show('scr-i2');}
-function renderSnSetup(){document.querySelectorAll('#nb .nb').forEach(b=>b.classList.toggle('on',parseInt(b.dataset.n)===S.ns));const w=document.getElementById('sn-wrap');w.innerHTML='';for(let i=0;i<S.ns;i++){const d=document.createElement('div');d.innerHTML='<div class="sl">Подчинённый '+(i+1)+'</div><input type="text" placeholder="Имя (необязательно)" value="'+(S.sn[i]||'')+'" oninput="S.sn['+i+']=this.value||\'Подчинённый '+(i+1)+'\'">';w.appendChild(d);}}
+function renderSnSetup(){
+  document.querySelectorAll('#nb .nb').forEach(b=>b.classList.toggle('on',parseInt(b.dataset.n)===S.ns));
+  const w=document.getElementById('sn-wrap');w.innerHTML='';
+  for(let i=0;i<S.ns;i++){const d=document.createElement('div');d.innerHTML='<div class="sl">Подчинённый '+(i+1)+'</div><input type="text" placeholder="Напишите имя или ник" value="'+(S.sn[i]||'')+'" oninput="S.sn['+i+']=this.value||\'Подчинённый '+(i+1)+'\'">';w.appendChild(d);}
+}
 function setN(n){S.ns=n;renderSnSetup();}
-function startP2(){renderAss();show('scr-ass');pb('Часть 2 — Оценка подчинённых','',0);}
+function startP2(){renderAss();show('scr-ass');pb('Часть 2','',0);}
 function renderAss(){
   document.getElementById('ass-h').innerHTML='<th>Характеристика</th>'+Array.from({length:S.ns},(_,i)=>'<th><span contenteditable="true" class="editable-name" data-i="'+i+'" onblur="renSub(this)" onkeydown="if(event.key===\'Enter\'){event.preventDefault();this.blur()}">'+S.sn[i]+'</span></th>').join('');
   const b=document.getElementById('ass-b');b.innerHTML='';
-  CRIT.forEach(c=>{const tr=document.createElement('tr');const tag=c.tp==='nr'?'<span class="ctag tnr">НР</span>':'<span class="ctag tsz">СЗ</span>';let cells='<td><span style="font-weight:700;color:var(--m);margin-right:4px">'+c.id+'.</span>'+c.t+tag+'</td>';for(let i=0;i<S.ns;i++){const v=(S.p2[c.id]||{})[i];cells+='<td style="text-align:center"><select class="ssel'+(v?' on':'')+'" data-c="'+c.id+'" data-i="'+i+'"><option value="">—</option>'+[1,2,3,4,5,6,7,8,9].map(n=>'<option value="'+n+'"'+(v==n?' selected':'')+'>'+n+'</option>').join('')+'</select></td>';}tr.innerHTML=cells;b.appendChild(tr);});
+  CRIT.forEach(c=>{
+    const tr=document.createElement('tr');
+    const tag=c.tp==='nr'?'<span class="ctag tnr">НР</span>':c.tp==='sz'?'<span class="ctag tsz">СЗ</span>':'<span class="ctag tnt">НЗ</span>';
+    let cells='<td><span style="font-weight:700;color:var(--m);margin-right:4px">'+c.id+'.</span>'+c.t+tag+'</td>';
+    for(let i=0;i<S.ns;i++){const v=(S.p2[c.id]||{})[i];cells+='<td style="text-align:center"><select class="ssel'+(v?' on':'')+'" data-c="'+c.id+'" data-i="'+i+'"><option value="">—</option>'+[1,2,3,4,5,6,7,8,9].map(n=>'<option value="'+n+'"'+(v==n?' selected':'')+'>'+n+'</option>').join('')+'</select></td>';}
+    tr.innerHTML=cells;b.appendChild(tr);
+  });
   b.querySelectorAll('.ssel').forEach(sel=>{sel.onchange=()=>{const c=parseInt(sel.dataset.c),i=parseInt(sel.dataset.i);if(!S.p2[c])S.p2[c]={};if(sel.value){S.p2[c][i]=parseInt(sel.value);sel.classList.add('on');}else{delete S.p2[c][i];sel.classList.remove('on');}updAss();};});
   updAss();
 }
-function updAss(){let f=0,tot=CRIT.length*S.ns;CRIT.forEach(c=>{for(let i=0;i<S.ns;i++)if((S.p2[c.id]||{})[i]!=null)f++;});pb('Часть 2 — Оценка подчинённых',f+' / '+tot+' заполнено',(f/tot)*100);document.getElementById('btn-sub').disabled=f<tot;}
+function renSub(el){const i=parseInt(el.dataset.i);const v=el.textContent.trim();S.sn[i]=v||'Подчинённый '+(i+1);if(!v)el.textContent=S.sn[i];}
+function updAss(){let f=0,tot=CRIT.length*S.ns;CRIT.forEach(c=>{for(let i=0;i<S.ns;i++)if((S.p2[c.id]||{})[i]!=null)f++;});pb('Часть 2',f+' / '+tot+' заполнено',(f/tot)*100);document.getElementById('btn-sub').disabled=f<tot;}
 
+// ── CALC ──────────────────────────────────────────────────────────
 function calcSt(){
   const sc={ИП:0,РП:0,ПП:0,ДГ:0};
   const det=SITS.map(s=>{const a=S.p1[s.id]||{};const r={sit:s.id};for(const[st,l]of Object.entries(s.k)){const pts=a[l]??0;sc[st]+=pts;r[st]={l,pts};}return r;});
@@ -443,175 +481,282 @@ function calcSt(){
   return{sc,dom:sorted[0][0],sec:sorted[1][0],det};
 }
 function getSS(nr,sz){
-  if(nr<=18){if(sz<=18)return{st:'ИП',d:'Жёсткое управление — необходимы чёткие задачи, подробные инструкции и постоянный контроль.'};if(sz<=36)return{st:'ИП/РП',d:'Главное — направлять. В простых случаях давать психологическую поддержку.'};return{st:'ИП/РП',d:'Главное — направлять. При простых заданиях — совместное решение проблем.'};} if(sz<=18){if(nr<=36)return{st:'РП/ИП',d:'Главное — совместное решение проблем. В сложных ситуациях — направлять.'};return{st:'ПП/ИП',d:'Главное — психологическая поддержка. В кризисных ситуациях можно направлять.'};} if(nr<=30){if(sz<=30)return{st:'РП',d:'Работник в целом уравновешен, но как начинающему нужна помощь при решении проблем.'};if(sz<=42)return{st:'РП/ПП',d:'Главное — решение проблем. При простых заданиях — психологическая поддержка.'};return{st:'РП/ДГ',d:'Главное — решение проблем. В знакомых ситуациях — делегируйте.'};} if(nr<=42){if(sz<=30)return{st:'ПП/РП',d:'Главное — психологическая поддержка. В стрессовых ситуациях — решать проблему совместно.'};if(sz<=42)return{st:'ПП',d:'Психологическая поддержка. Ведите диалог на равных, мотивируйте и поддерживайте.'};return{st:'ПП/ДГ',d:'Психологическая поддержка. В простых и знакомых ситуациях — делегируйте.'};} if(sz<=30)return{st:'ДГ/РП',d:'Главное — делегировать. В сложных ситуациях — решать проблему совместно.'};if(sz<=42)return{st:'ДГ/ПП',d:'Главное — делегировать. В стрессовых ситуациях — психологическая поддержка.'};return{st:'ДГ',d:'Делегирование и доверие. Ставьте цель — и дайте свободу действий.'};
+  if(nr<=18){if(sz<=18)return{st:'ИП',d:'Жёсткое управление — необходимы чёткие задачи, подробные инструкции и постоянный контроль.'};if(sz<=36)return{st:'ИП/РП',d:'Главное — направлять. В простых случаях — психологическая поддержка.'};return{st:'ИП/РП',d:'Главное — направлять. При простых заданиях — совместное решение проблем.'};} if(sz<=18){if(nr<=36)return{st:'РП/ИП',d:'Главное — совместное решение проблем. В сложных ситуациях — направлять.'};return{st:'ПП/ИП',d:'Главное — психологическая поддержка. В кризисных ситуациях — направлять.'};} if(nr<=30){if(sz<=30)return{st:'РП',d:'Нужна помощь при решении проблем и совместное обсуждение задач.'};if(sz<=42)return{st:'РП/ПП',d:'Главное — решение проблем. При простых заданиях — психологическая поддержка.'};return{st:'РП/ДГ',d:'Главное — решение проблем. В знакомых ситуациях — делегируйте.'};} if(nr<=42){if(sz<=30)return{st:'ПП/РП',d:'Главное — психологическая поддержка. В стрессовых ситуациях — решать проблему совместно.'};if(sz<=42)return{st:'ПП',d:'Психологическая поддержка. Ведите диалог на равных, мотивируйте и поддерживайте.'};return{st:'ПП/ДГ',d:'Психологическая поддержка. В простых и знакомых ситуациях — делегируйте.'};} if(sz<=30)return{st:'ДГ/РП',d:'Главное — делегировать. В сложных ситуациях — решать совместно.'};if(sz<=42)return{st:'ДГ/ПП',d:'Главное — делегировать. В стрессовых ситуациях — психологическая поддержка.'};return{st:'ДГ',d:'Делегирование и доверие. Ставьте цель — и дайте свободу действий.'};
 }
-function calcSubs(){return Array.from({length:S.ns},(_,i)=>{const nr=[1,3,5,7,9,11].reduce((s,id)=>s+((S.p2[id]||{})[i]||1),0);const sz=[2,4,6,8,10,12].reduce((s,id)=>s+((S.p2[id]||{})[i]||1),0);const ss=getSS(nr,sz);return{nm:S.sn[i],nr,sz,st:ss.st,d:ss.d};});}
-function gap(dom,sec,st){const p=st.split('/');if(p.includes(dom))return'match';if(p.includes(sec))return'close';return'gap';}
+function calcSubs(){
+  return Array.from({length:S.ns},(_,i)=>{
+    const nr=[1,3,5,7,9,11].reduce((s,id)=>s+((S.p2[id]||{})[i]||1),0);
+    const sz=[2,4,6,8,10,12].reduce((s,id)=>s+((S.p2[id]||{})[i]||1),0);
+    const nt=((S.p2[13]||{})[i]||1)+((S.p2[14]||{})[i]||1);
+    const ss=getSS(nr,sz);
+    let ntAlert=null;if(nt>=14)ntAlert='high';else if(nt>=8)ntAlert='mid';
+    return{nm:S.sn[i],nr,sz,nt,st:ss.st,d:ss.d,ntAlert};
+  });
+}
+
+// ── SUBMIT ────────────────────────────────────────────────────────
 function submit(){
   const styles=calcSt(),subs=calcSubs();
   S.res={styles,subs};
-  buildRes();
-  sendResults(styles,subs);
-  pb(null,null,null);
-  show('scr-res');
+  sendToSheets(styles,subs);
+  buildRes();pb(null,null,null);show('scr-res');
 }
 
+// ── BUILD RESULTS ─────────────────────────────────────────────────
 function buildRes(){
   const{styles,subs}=S.res;
   document.getElementById('res-n').textContent=S.name;window._resName=S.name;
   document.getElementById('res-d').textContent='Тест завершён · '+new Date().toLocaleDateString('ru-RU');
-  const dom=SI[styles.dom];
-  // ── Tab R0: your style ──
-  let bars='';['ИП','РП','ПП','ДГ'].forEach(s=>{const pct=Math.round(styles.sc[s]/108*100);bars+='<div class="barr"><div class="bi"><span style="font-weight:600;color:'+SI[s].c+'">'+s+'</span><span style="color:var(--mu)">'+SI[s].f+'</span><span style="color:var(--mu);font-family:monospace;margin-left:auto">'+styles.sc[s]+' / 108</span></div><div class="bt"><div class="bf" style="background:'+SI[s].c+';width:'+pct+'%"></div></div></div>';});
-  let calcRows=styles.det.map(d=>'<tr><td>'+d.sit+'</td><td>'+d['ИП'].l+'='+d['ИП'].pts+'</td><td>'+d['РП'].l+'='+d['РП'].pts+'</td><td>'+d['ПП'].l+'='+d['ПП'].pts+'</td><td>'+d['ДГ'].l+'='+d['ДГ'].pts+'</td></tr>').join('');
-  let sdefRows=['ИП','РП','ПП','ДГ'].map(s=>'<tr><td class="snum-c" style="color:'+SI[s].c+'">'+SI[s].r+'</td><td class="scode" style="color:'+SI[s].c+'">'+s+'</td><td class="sdesc">'+SI[s].long+'</td></tr>').join('');
-  document.getElementById('r-0').innerHTML='<div class="card"><div class="lbl">Часть 1 — Стиль руководства</div>'
-    +'<div class="dom" style="border-left-color:'+dom.c+'"><div class="dl">Доминирующий стиль</div><div class="dn" style="color:'+dom.c+'">'+styles.dom+' — '+dom.f+'</div><div class="ds">Дополнительный стиль: <b>'+styles.sec+'</b> — '+SI[styles.sec].f+'</div></div>'
-    +'<p style="font-size:14px;line-height:1.65;color:var(--mu);margin-bottom:16px">'+dom.d+'</p>'
+
+  // 2 tabs
+  document.getElementById('res-nav').innerHTML=
+    '<button class="rnb on" data-r="0" onclick="goR(0)">① Ваш стиль руководства</button>'
+    +'<button class="rnb" data-r="1" onclick="goR(1)">② Подчинённые</button>';
+
+  const dom=SI[styles.dom];const dc=dom.c;
+
+  // bars
+  // scale bars relative to actual min/max for visual clarity
+  const allScores=['ИП','РП','ПП','ДГ'].map(s=>styles.sc[s]);
+  const minS=Math.min(...allScores),maxS=Math.max(...allScores);
+  const range=maxS-minS||1;
+  let bars='<div class="vbars">';
+  ['ИП','РП','ПП','ДГ'].forEach(s=>{
+    const raw=styles.sc[s];
+    // scale: lowest gets 15%, highest gets 95%, others proportional
+    const pct=Math.round(15+(raw-minS)/range*80);
+    const isDom=s===styles.dom,isSec=s===styles.sec;
+    bars+='<div class="vbar-wrap"><div class="vbar-score" style="color:'+SI[s].c+'">'+raw+'</div>'
+      +'<div class="vbar-track" style="border:2px solid '+(isDom?SI[s].c:'transparent')+'"><div class="vbar-fill" style="background:'+SI[s].c+';height:'+pct+'%;opacity:'+(isDom||isSec?'1':'0.3')+'"></div></div>'
+      +'<div class="vbar-lbl" style="color:'+SI[s].c+'">'+s+'</div></div>';
+  });
+  bars+='</div><div style="font-size:12px;color:var(--mu);text-align:center;margin-top:2px">Доминирующий: <b style="color:'+dc+'">'+styles.dom+'</b> · Дополнительный: <b>'+styles.sec+'</b></div>';
+
+  // sdef table
+  let sdef='<table style="width:100%;border-collapse:collapse">';
+  ['ИП','РП','ПП','ДГ'].forEach(s=>{
+    sdef+='<tr>'
+      +'<td style="width:28px;font-weight:700;font-size:14px;text-align:center;color:'+SI[s].c+';padding:11px 12px;border-bottom:.5px solid var(--br);vertical-align:top">'+SI[s].r+'</td>'
+      +'<td style="width:40px;font-weight:700;font-size:14px;text-align:center;color:'+SI[s].c+';padding:11px 12px;border-bottom:.5px solid var(--br);vertical-align:top">'+s+'</td>'
+      +'<td style="padding:11px 12px;border-bottom:.5px solid var(--br);font-size:13px;line-height:1.65;color:var(--mu)"><b style="color:var(--n)">'+SI[s].f+'.</b> '+SI[s].desc+'</td>'
+      +'</tr>';
+  });
+  sdef+='</table>';
+
+  // diff items
+  let diffHtml=dom.diff.map((d,i)=>{
+    const tips=d.tips.map(t=>'<div style="display:flex;gap:7px;margin-bottom:5px;font-size:13px;line-height:1.55"><span style="color:'+SI[d.sc].c+';font-weight:600;flex-shrink:0">—</span><span>'+t+'</span></div>').join('');
+    return '<div style="border:.5px solid var(--br);border-radius:9px;overflow:hidden;margin-bottom:10px">'
+      +'<div style="padding:11px 15px;background:var(--bg)">'
+        +'<div style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:'+SI[d.sc].c+';margin-bottom:6px">'+(i+1)+'. Если подчинённый требует '+d.sc+' ('+SI[d.sc].f+')</div>'
+        +'<p style="font-size:13px;color:var(--mu);line-height:1.65">'+d.why+'</p>'
+      +'</div>'
+      +'<div style="display:flex;border-top:.5px solid var(--br)">'
+        +'<div style="width:110px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border-right:.5px solid var(--br);padding:14px 8px;font-size:13px;font-weight:600;color:var(--mu);letter-spacing:.3px">Рекомендации</div>'
+        +'<div style="flex:1;padding:12px 15px;border-left:3px solid '+SI[d.sc].c+'">'+tips+'</div>'
+      +'</div>'
+      +'</div>';
+  }).join('');
+
+  // blind spot
+  const bs=dom.bs;
+  const bsHtml='<div style="margin-top:4px;padding:13px 15px;border-left:3px solid '+dc+';background:var(--bg)">'
+    +'<p style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:'+dc+';margin-bottom:5px">Слепое пятно: '+bs.ti+'</p>'
+    +'<p style="font-size:13px;color:var(--mu);line-height:1.65;margin-bottom:6px">'+bs.txt+'</p>'
+    +'<p style="font-size:13px;color:var(--mu);font-style:italic;line-height:1.6">Вопрос к себе: «'+bs.q+'»</p>'
+    +'</div>';
+
+  // calc table
+  const calcRows=styles.det.map(d=>'<tr><td>'+d.sit+'</td><td>'+d['ИП'].l+'='+d['ИП'].pts+'</td><td>'+d['РП'].l+'='+d['РП'].pts+'</td><td>'+d['ПП'].l+'='+d['ПП'].pts+'</td><td>'+d['ДГ'].l+'='+d['ДГ'].pts+'</td></tr>').join('');
+
+  // ── TAB 0 ──
+  document.getElementById('r-0').innerHTML=
+    '<div class="card"><div class="lbl">О стилях руководства</div>'
+    +'<p style="font-size:13px;line-height:1.7;color:var(--mu);margin-bottom:13px">Нет «правильного» или «неправильного» стиля руководства. Есть стиль, точно подобранный к конкретному сотруднику — исходя из его уровня зрелости, профессиональной подготовки, опыта и задач, которые перед ним стоят в данный момент. Один и тот же человек может требовать разного стиля на разных этапах работы.</p>'
+    +sdef+'</div>'
+    +'<div class="card"><div class="lbl">Ваши результаты</div>'
     +bars
     +'<div class="hr"></div>'
-    +'<p style="font-size:13px;font-weight:600;margin-bottom:10px">Определение стиля поведения</p>'
-    +'<p style="font-size:13px;color:var(--mu);margin-bottom:10px;line-height:1.6">У вас есть возможность проанализировать своё поведение как руководителя, если вы ответили правдиво на предыдущие вопросы.</p>'
-    +'<table class="sdef-table"><tbody>'+sdefRows+'</tbody></table>'
+    +'<p style="font-size:15px;font-weight:600;color:'+dc+';margin-bottom:8px">Ваш доминирующий стиль: '+styles.dom+' — '+dom.f+'</p>'
+    +'<p style="font-size:13px;color:var(--mu);line-height:1.65;margin-bottom:10px">'+dom.about+'</p>'
+    +'<p style="font-size:13px;font-weight:600;margin-bottom:8px">В работе вы склонны:</p>'
+    +dom.you.map(t=>'<div style="display:flex;gap:7px;margin-bottom:6px;font-size:13px;line-height:1.55"><span style="color:'+dc+';font-weight:600;flex-shrink:0">—</span><span>'+t+'</span></div>').join('')
+    +'<div style="background:var(--bg);border-radius:8px;padding:11px 14px;margin:12px 0;font-size:13px;color:var(--mu);line-height:1.65"><b style="color:var(--n)">Это хорошо работает с сотрудниками, которые:</b><br>'+dom.works+'</div>'
+    +'<p style="font-size:13px;font-weight:600;margin-bottom:10px">С кем могут возникнуть сложности:</p>'
+    +diffHtml
+    +bsHtml
+    +'<div style="margin-top:14px;padding:12px 14px;background:var(--li);border-radius:8px;font-size:13px;line-height:1.7;color:var(--b)">Важно понимать: если большинство ваших подчинённых находятся на уровне зрелости, который не совпадает с вашим доминирующим стилем — это создаёт ситуации, где сотрудник работает не так эффективно, как мог бы. Как в любом деле: инструмент должен подходить под задачу. Умение осознанно менять стиль — это ваша зона роста как руководителя.</div>'
+    +'<div style="margin-top:13px;font-size:13px;font-weight:600;color:var(--n)">Посмотрите, как ваш стиль соотносится с каждым из ваших подчинённых → перейдите на вкладку <b>② Подчинённые</b></div>'
     +'<div class="hr"></div>'
     +'<button class="exb" onclick="tEx(\'ec1\')">▸ Как рассчитывался результат</button>'
-    +'<div id="ec1" class="exbd"><div style="overflow-x:auto"><table class="ct"><thead><tr><th>Вопрос</th><th style="color:var(--ip)">ИП</th><th style="color:var(--rp)">РП</th><th style="color:var(--pp)">ПП</th><th style="color:var(--dg)">ДГ</th></tr></thead><tbody>'+calcRows+'</tbody><tfoot><tr><td>Σ</td><td style="color:var(--ip)">'+styles.sc['ИП']+'</td><td style="color:var(--rp)">'+styles.sc['РП']+'</td><td style="color:var(--pp)">'+styles.sc['ПП']+'</td><td style="color:var(--dg)">'+styles.sc['ДГ']+'</td></tr></tfoot></table></div></div></div>';
-  // ── Tab R1: subs ──
-  let subCards=subs.map(sub=>{const sk=sub.st.split('/')[0];const sc2=SI[sk]?.c||'#2563a8';return'<div class="sc-card"><div class="sct"><span class="scn">'+sub.nm+'</span><span class="stb" style="color:'+sc2+'">'+sub.st+'</span></div><div class="scs"><span style="color:#1e40af">Навыки работы: <b style="font-family:monospace">'+sub.nr+'</b>/54</span><span style="color:#065f46">Соц. зрелость: <b style="font-family:monospace">'+sub.sz+'</b>/54</span></div><div class="scd">'+sub.d+'</div></div>';}).join('');
-  const nrRows=CRIT.map(c=>{const tag=c.tp==='nr'?'<span class="ctag tnr">НР</span>':'<span class="ctag tsz">СЗ</span>';const cells=Array.from({length:S.ns},(_,i)=>'<td>'+((S.p2[c.id]||{})[i]||'-')+'</td>').join('');return'<tr><td>'+c.id+'. '+c.t.substring(0,38)+'...'+tag+'</td>'+cells+'</tr>';}).join('');
+    +'<div id="ec1" class="exbd"><div style="overflow-x:auto"><table class="ct"><thead><tr><th>Вопрос</th><th style="color:var(--ip)">ИП</th><th style="color:var(--rp)">РП</th><th style="color:var(--pp)">ПП</th><th style="color:var(--dg)">ДГ</th></tr></thead><tbody>'
+    +calcRows
+    +'</tbody><tfoot><tr><td>Σ</td><td style="color:var(--ip)">'+styles.sc['ИП']+'</td><td style="color:var(--rp)">'+styles.sc['РП']+'</td><td style="color:var(--pp)">'+styles.sc['ПП']+'</td><td style="color:var(--dg)">'+styles.sc['ДГ']+'</td></tr></tfoot></table></div></div>'
+    +'</div>';
+
+  // ── TAB 1 ──
+  const subCards=subs.map(sub=>{
+    const sk=sub.st.split('/')[0];const sc2=SI[sk]?.c||'#2563a8';
+    const nrl=lvl(sub.nr,54),szl=lvl(sub.sz,54);
+    const g=gapType(styles.dom,styles.sec,sub.st);
+    const gBadge=g==='match'?'<span class="badge gm">Совпадает</span>':g==='close'?'<span class="badge gc">Близко</span>':'<span class="badge gr">Разрыв</span>';
+    let ntTxt='';
+    const isHighStyle=(sub.st.split('/')[0]==='ПП'||sub.st.split('/')[0]==='ДГ');
+    if(sub.ntAlert==='high'){
+      if(isHighStyle){
+        ntTxt='<br><br><b>Важно: новые задачи принципиально иного уровня.</b> Если у этого сотрудника в последние 3 месяца появились задачи принципиально иного уровня — не просто больше работы, а другой тип ответственности, новые компетенции, которых раньше не требовалось, то даже если по привычным обязанностям он показывает высокий уровень зрелости — в новой роли он начинает с нуля. Опыт в одной области не переносится автоматически в другую.<br><br><b>Рекомендация:</b> временно сдвиньтесь в сторону стиля <b>ИП</b> по новым функциям — даже если по остальным вы работаете в режиме '+sub.st.split('/')[0]+': → Обсудите вместе как он планирует выстроить работу. → Уточните как он будет ставить цели и отслеживать их выполнение. → Договоритесь о точках проверки — особенно в первые 2–3 месяца.<br><br>По мере освоения новых функций постепенно переходите: <b>ИП → РП → ПП → ДГ</b>.';
+      } else {
+        ntTxt='<br><br>У этого сотрудника в последние 3 месяца появились задачи принципиально иного уровня. Даже если по привычным делам он уже освоился — по новым задачам он временно находится на более низком уровне готовности. Рекомендуется добавить дополнительные точки контроля и усилить поддержку.';
+      }
+    }
+    else if(sub.ntAlert==='mid')ntTxt='<br><br>Возможно, у сотрудника появились новые задачи. Уточните, всё ли ему понятно по текущей работе — при необходимости усильте поддержку.';
+    const needed=sk;const key=needed+'->'+styles.dom;
+    const why=GAP_WHY[key]||'';const act=GAP_ACT[key]||'';
+    let gapBlock='';
+    if(g==='gap'&&why){
+      gapBlock='<div style="margin-top:12px;padding:13px 15px;background:var(--bg);border-radius:8px">'
+        +'<p style="font-size:13px;line-height:1.65;color:var(--mu);margin-bottom:8px"><b style="color:#991b1b">Разрыв: </b>'+why+'</p>'
+        +'<p style="font-size:13px;line-height:1.65;color:var(--mu)"><b style="color:var(--n)">Что делать: </b>'+act+'</p>'
+        +(sub.ntAlert==='high'?'<p style="font-size:13px;color:var(--mu);line-height:1.65;margin-top:6px"><b style="color:#92400e">⚠ Новые задачи:</b> учитывайте это при выборе стиля — сотруднику нужна дополнительная поддержка.</p>':'')
+        +'</div>';
+    }else if(g==='close'&&act){
+      gapBlock='<div style="margin-top:12px;padding:12px 14px;background:var(--bg);border-radius:8px"><p style="font-size:13px;line-height:1.65;color:var(--mu)"><b style="color:#854d0e">Подсказка: </b>'+act+'</p></div>';
+    }
+    return '<div class="sc-card">'
+      +'<div class="sct"><span class="scn">'+sub.nm+'</span><span style="display:flex;align-items:center;gap:5px"><span class="stb" style="color:'+sc2+'">'+sub.st+'</span>'+gBadge+'</span></div>'
+      +'<div style="display:flex;gap:16px;font-size:12.5px;margin-bottom:8px;flex-wrap:wrap">'
+        +'<span><b style="color:#1e40af">Навыки работы:</b> <span style="font-family:monospace">'+sub.nr+'</span>/54 — <span style="color:'+nrl.c+';font-weight:500">'+nrl.l+'</span></span>'
+        +'<span><b style="color:#065f46">Соц. зрелость:</b> <span style="font-family:monospace">'+sub.sz+'</span>/54 — <span style="color:'+szl.c+';font-weight:500">'+szl.l+'</span></span>'
+      +'</div>'
+      +'<div style="font-size:13px;color:var(--mu);line-height:1.7">'+sub.d+ntTxt+'</div>'
+      +gapBlock+'</div>';
+  }).join('');
+
+  const nrRows=CRIT.filter(c=>c.id<=12).map(c=>{
+    const tag=c.tp==='nr'?'<span class="ctag tnr">НР</span>':'<span class="ctag tsz">СЗ</span>';
+    const cells=Array.from({length:S.ns},(_,i)=>'<td>'+((S.p2[c.id]||{})[i]||'-')+'</td>').join('');
+    return'<tr><td>'+c.id+'. '+c.t.substring(0,38)+'...'+tag+'</td>'+cells+'</tr>';
+  }).join('');
   const nrSums=Array.from({length:S.ns},(_,i)=>'<td style="color:#1e40af;font-weight:700">'+[1,3,5,7,9,11].reduce((s,id)=>s+((S.p2[id]||{})[i]||0),0)+'</td>').join('');
   const szSums=Array.from({length:S.ns},(_,i)=>'<td style="color:#065f46;font-weight:700">'+[2,4,6,8,10,12].reduce((s,id)=>s+((S.p2[id]||{})[i]||0),0)+'</td>').join('');
   const subHd=Array.from({length:S.ns},(_,i)=>'<th>'+S.sn[i]+'</th>').join('');
-  document.getElementById('r-1').innerHTML='<div class="card"><div class="lbl">Часть 2 — Подчинённые</div><p style="font-size:14px;color:var(--mu);margin-bottom:14px;line-height:1.6">Для каждого подчинённого определён рекомендуемый стиль руководства на основе навыков работы и социальной зрелости.</p>'+subCards+'<div class="hr"></div><button class="exb" onclick="tEx(\'ec2\')">▸ Как рассчитывался результат</button><div id="ec2" class="exbd"><div style="overflow-x:auto"><table class="ct"><thead><tr><th>Характеристика</th>'+subHd+'</tr></thead><tbody>'+nrRows+'</tbody><tfoot><tr><td>Навыки работы (НР)</td>'+nrSums+'</tr><tr><td>Соц. зрелость (СЗ)</td>'+szSums+'</tr></tfoot></table></div></div></div>';
-  // ── Tab R2: gap ──
-  const gapRows=subs.map(sub=>{const g=gap(styles.dom,styles.sec,sub.st);const bdg=g==='match'?'<span class="badge gm">Совпадает</span>':g==='close'?'<span class="badge gc">Близко</span>':'<span class="badge gr">Разрыв</span>';const sk=sub.st.split('/')[0];const sc2=SI[sk]?.c||'#333';return'<tr><td>'+sub.nm+'</td><td><span style="font-weight:700;font-family:monospace;color:'+sc2+'">'+sub.st+'</span></td><td><span style="font-weight:700;font-family:monospace;color:'+SI[styles.dom].c+'">'+styles.dom+'</span></td><td>'+bdg+'</td></tr>';}).join('');
-  document.getElementById('r-2').innerHTML='<div class="card"><div class="lbl">Совпадение стилей</div><p style="font-size:14px;color:var(--mu);margin-bottom:16px;line-height:1.6">Ваш доминирующий стиль сравнивается с тем, какой стиль требуется каждому подчинённому прямо сейчас.</p><div style="overflow-x:auto"><table class="gt"><thead><tr><th style="text-align:left">Подчинённый</th><th>Требуется</th><th>Ваш стиль</th><th>Оценка</th></tr></thead><tbody>'+gapRows+'</tbody></table></div><div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap;font-size:12px;color:var(--mu)"><span><span class="badge gm">Совпадает</span> — доминирующий стиль совпадает с нужным</span><span><span class="badge gc">Близко</span> — совпадает дополнительный стиль</span><span><span class="badge gr">Разрыв</span> — стили существенно расходятся</span></div></div>';
-  // ── Tab R3: recs ──
-  let recs='';[styles.dom,...(styles.sec!==styles.dom?[styles.sec]:[])].forEach(s=>{const si=SI[s];recs+='<div class="recb" style="border-left-color:'+si.c+'"><div class="rect" style="color:'+si.c+'">'+s+' — '+si.f+'</div>'+si.t.map(tip=>'<div class="reci"><span class="reca" style="color:'+si.c+'">→</span><span>'+tip+'</span></div>').join('')+'</div>';});
-  const hasGap=subs.some(sub=>gap(styles.dom,styles.sec,sub.st)!=='match');
-  let gapRecs='';if(hasGap){gapRecs='<div class="card"><div class="lbl">Внимание: разрывы</div>';subs.filter(sub=>gap(styles.dom,styles.sec,sub.st)!=='match').forEach(sub=>{const sk=sub.st.split('/')[0];const sc2=SI[sk]?.c||'#333';gapRecs+='<div class="sc-card"><div class="sct"><span class="scn">'+sub.nm+'</span><span class="stb" style="color:'+sc2+'">'+sub.st+'</span></div><div style="font-size:13px;line-height:1.6">Этому сотруднику сейчас нужен стиль <b style="color:'+sc2+'">'+sub.st+'</b>, а ваш доминирующий — <b style="color:'+SI[styles.dom].c+'">'+styles.dom+'</b>. '+sub.d+' Рекомендуем осознанно применять инструменты стиля <b>'+sk+'</b> в работе с этим подчинённым.</div></div>';});gapRecs+='</div>';}
-  const bsData=[{s:'ИП',ti:'Делегирование (Узкое горлышко)',c:'#c0392b',tx:'Если в вашем сочетании присутствует ИП, ваша зона риска — гиперконтроль.',q:'Склонен ли я замыкать задачи на себе из-за страха потери качества? Не становлюсь ли я тормозом для развития, отказываясь передавать полномочия?'},{s:'ПП',ti:'Объективность (Фильтр восприятия)',c:'#1a7a3c',tx:'Если превалирует ПП, вы можете быть излишне категоричны в оценках людей.',q:'Не пропускаю ли я таланты и ценные идеи только потому, что человек не вписывается в мою личную систему ценностей?'},{s:'РП',ti:'Контекст управления (Кризис vs Стабильность)',c:'#c87300',tx:'Некоторые сочетания (например, ИП–РП) идеально работают в режиме «пожара», но могут быть деструктивны в периоды стабильного роста.',q:'Насколько мой стиль адаптивен? Умею ли я переключаться с режима кризис-менеджмента на долгосрочное планирование?'},{s:'ДГ',ti:'Авторитет и развитие (Твёрдость vs Лояльность)',c:'#6c3483',tx:'Стили вроде ПП–ДГ высоко оцениваются коллегами, но могут «проседать» в ситуациях, требующих непопулярных решений.',q:'Хватает ли мне управленческой воли проявить твёрдость в критический момент, или желание сохранить климат мешает достижению бизнес-целей?'}];
-  const relBs=bsData.filter(b=>[styles.dom,styles.sec].includes(b.s));
-  let bsHtml='';if(relBs.length){bsHtml='<div class="card"><div class="lbl">Слепые зоны</div>';relBs.forEach(b=>{bsHtml+='<div class="bls" style="border-left-color:'+b.c+'"><div class="blt" style="color:'+b.c+'">'+b.ti+'</div><div style="font-size:13px;line-height:1.6;margin-bottom:4px">'+b.tx+'</div><div class="blq">Вопрос к себе: «'+b.q+'»</div></div>';});bsHtml+='<p style="font-size:13px;color:var(--mu);line-height:1.7;margin-top:12px;font-style:italic">Используйте расшифровку не как окончательный диагноз, а как карту для развития гибкости. Эффективный руководитель — тот, кто осознаёт свои естественные склонности и умеет сознательно корректировать их в зависимости от задач бизнеса.</p></div>';}
-  document.getElementById('r-3').innerHTML='<div class="card"><div class="lbl">Рекомендации</div>'+recs+'</div>'+gapRecs+bsHtml;
+
+  document.getElementById('r-1').innerHTML=
+    '<div class="card"><div class="lbl">Подчинённые</div>'
+    +'<p style="font-size:13px;color:var(--mu);margin-bottom:14px;line-height:1.65">Для каждого подчинённого рассчитан рекомендуемый стиль руководства на основе <b>навыков работы (НР)</b> — профессиональные знания, опыт, компетентность; и <b>социальной зрелости (СЗ)</b> — мотивация, самостоятельность, готовность брать ответственность.</p>'
+    +subCards
+    +'<div class="hr"></div>'
+    +'<button class="exb" onclick="tEx(\'ec2\')">▸ Как рассчитывался результат</button>'
+    +'<div id="ec2" class="exbd"><div style="overflow-x:auto"><table class="ct"><thead><tr><th>Характеристика</th>'+subHd+'</tr></thead><tbody>'+nrRows+'</tbody><tfoot><tr><td>Навыки работы (НР)</td>'+nrSums+'</tr><tr><td>Соц. зрелость (СЗ)</td>'+szSums+'</tr></tfoot></table></div></div>'
+    +'</div>';
 }
+
+// ── UI HELPERS ────────────────────────────────────────────────────
 function tEx(id){const el=document.getElementById(id);el.classList.toggle('on');el.previousElementSibling.textContent=el.classList.contains('on')?'▾ Скрыть расчёт':'▸ Как рассчитывался результат';}
-function goR(n){document.querySelectorAll('.rnb').forEach(b=>b.classList.toggle('on',parseInt(b.dataset.r)===n));for(let i=0;i<4;i++){const el=document.getElementById('r-'+i);if(el)el.style.display=i===n?'block':'none';}}
-</script>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-<script>
+function goR(n){document.querySelectorAll('.rnb').forEach(b=>b.classList.toggle('on',parseInt(b.dataset.r)===n));['r-0','r-1'].forEach((id,i)=>{const el=document.getElementById(id);if(el)el.style.display=i===n?'block':'none';});}
+
+// ── PDF ───────────────────────────────────────────────────────────
+// ── GOOGLE SHEETS SENDER ─────────────────────────────────────────
+const GS_URL = 'https://script.google.com/macros/s/AKfycbyIyKqu4HQ4QwGOUV6fFq8162velt_WBjh-f6V1itiSxP5R6xXdA7iZsWr0X3wrTTFdkw/exec';
+
+function sendToSheets(styles, subs) {
+  try {
+    const subsText = subs.map(s =>
+      s.nm + ': требуется ' + s.st +
+      ' (НР=' + s.nr + '/54, СЗ=' + s.sz + '/54)'
+    ).join('; ');
+    const params = new URLSearchParams({
+      name: S.name,
+      dom:  styles.dom,
+      sec:  styles.sec,
+      ip:   styles.sc['ИП'],
+      rp:   styles.sc['РП'],
+      pp:   styles.sc['ПП'],
+      dg:   styles.sc['ДГ'],
+      subs: subsText
+    });
+    fetch(GS_URL + '?' + params.toString(), {
+      method: 'GET',
+      mode: 'no-cors'
+    }).catch(()=>{});
+  } catch(e) {}
+}
+
+// ── PDF ───────────────────────────────────────────────────────────────────────
 function savePDF(){
-  // expand all calc tables first
-  ['ec1','ec2'].forEach(id=>{const el=document.getElementById(id);if(el&&!el.classList.contains('on'))el.classList.add('on');});
-  // show all result tabs
-  for(let i=0;i<4;i++){const el=document.getElementById('r-'+i);if(el)el.style.display='block';}
   const btn=document.getElementById('btn-pdf');
-  const st=document.getElementById('pdf-status');
-  btn.disabled=true;st.style.display='block';
-  const el=document.getElementById('scr-res');
-  const name=(window._resName||'результаты').replace(/\s+/g,'_');
+  btn.disabled=true;btn.textContent='Формируется...';
+  document.querySelectorAll('.exbd').forEach(e=>e.classList.add('on'));
+  ['r-0','r-1'].forEach(id=>{const el=document.getElementById(id);if(el)el.style.display='block';});
+  const name=(window._resName||'результаты');
+  const safe=name.replace(/\s+/g,'_');
+
+  const div=document.createElement('div');
+  div.style.cssText='font-family:system-ui,sans-serif;color:#0f2040;background:#fff;width:680px;padding:0 16px;';
+
+  // inject CSS that prevents mid-line breaks
+  const sty=document.createElement('style');
+  sty.textContent=[
+    'p, div, span { orphans: 3; widows: 3; }',
+    '.card { page-break-inside: avoid; break-inside: avoid; margin-bottom: 14px; background:#fff; border: 1px solid #d0daea; border-radius: 10px; padding: 18px 20px; }',
+    '.sc-card { page-break-inside: avoid; break-inside: avoid; }',
+    '.vbars { page-break-inside: avoid; break-inside: avoid; }',
+    '.diff-block { page-break-inside: avoid; break-inside: avoid; }',
+    'p { margin-bottom: 8px; font-size: 13px; line-height: 1.65; }',
+    'b { font-weight: 600; }',
+    '.lbl { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #2563a8; margin-bottom: 10px; display: block; }',
+  ].join('\n');
+  div.appendChild(sty);
+
+  // header
+  const hdr=document.createElement('div');
+  hdr.style.cssText='background:#0f2040;color:#fff;padding:14px 18px;border-radius:8px;margin-bottom:14px;page-break-inside:avoid';
+  hdr.innerHTML='<div style="font-size:10px;opacity:.5;letter-spacing:2px;text-transform:uppercase;margin-bottom:3px">РЕЗУЛЬТАТЫ ТЕСТА</div>'
+    +'<div style="font-size:17px;font-weight:700">'+name+'</div>'
+    +'<div style="font-size:12px;opacity:.6;margin-top:2px">'+new Date().toLocaleDateString('ru-RU')+'</div>';
+  div.appendChild(hdr);
+
+  // tab 0 content
+  const t0=document.getElementById('r-0');
+  if(t0){const d=document.createElement('div');d.innerHTML=t0.innerHTML;div.appendChild(d);}
+
+  // explicit page break
+  const pb=document.createElement('div');
+  pb.style.cssText='page-break-before:always;break-before:always;height:4px;';
+  div.appendChild(pb);
+
+  // tab 1 header label
+  const lbl2=document.createElement('div');
+  lbl2.style.cssText='font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#2563a8;margin:14px 0 10px;';
+  lbl2.textContent='② ПОДЧИНЁННЫЕ';
+  div.appendChild(lbl2);
+
+  // tab 1 content
+  const t1=document.getElementById('r-1');
+  if(t1){const d=document.createElement('div');d.innerHTML=t1.innerHTML;div.appendChild(d);}
+
+  document.body.appendChild(div);
+
   const opt={
     margin:[10,10,10,10],
-    filename:'стили_руководства_'+name+'.pdf',
-    image:{type:'jpeg',quality:0.95},
-    html2canvas:{scale:2,useCORS:true,logging:false},
+    filename:'стили_руководства_'+safe+'.pdf',
+    image:{type:'jpeg',quality:0.97},
+    html2canvas:{scale:2,useCORS:true,logging:false,backgroundColor:'#ffffff',scrollX:0,scrollY:0},
     jsPDF:{unit:'mm',format:'a4',orientation:'portrait'},
-    pagebreak:{mode:'avoid-all'}
+    pagebreak:{mode:'css',before:'[style*="page-break-before:always"]',avoid:['.card','.sc-card','.vbars','.diff-block']}
   };
-  html2pdf().set(opt).from(el).save().then(()=>{
-    btn.disabled=false;st.style.display='none';
-    // restore: show only active tab
-    for(let i=0;i<4;i++){const el2=document.getElementById('r-'+i);if(el2)el2.style.display=i===0?'block':'none';}
+
+  html2pdf().set(opt).from(div).save().then(()=>{
+    document.body.removeChild(div);
+    btn.disabled=false;
+    btn.innerHTML='&#128196; Сохранить как PDF';
+    ['r-0','r-1'].forEach((id,i)=>{
+      const el=document.getElementById(id);
+      if(el)el.style.display=i===0?'block':'none';
+    });
     document.querySelectorAll('.rnb').forEach(b=>b.classList.toggle('on',b.dataset.r==='0'));
   });
 }
-// ── Rename subordinate inline ──────────────────────
-function renSub(el){const i=parseInt(el.dataset.i);const v=el.textContent.trim();S.sn[i]=v||'Подчинённый '+(i+1);if(!v)el.textContent=S.sn[i];}
-
-// ── EmailJS results sender ─────────────────────────
-// НАСТРОЙКА: замени эти три значения своими из emailjs.com
-const EJS_SERVICE  = 'YOUR_SERVICE_ID';
-const EJS_TEMPLATE = 'YOUR_TEMPLATE_ID';
-const EJS_KEY      = 'YOUR_PUBLIC_KEY';
-const TRAINER_EMAIL = 'pro2623732@gmail.com';
-
-function sendResults(styles,subs){
-  if(EJS_SERVICE==='YOUR_SERVICE_ID'){console.log('EmailJS не настроен');return;}
-  const body=buildEmailBody(styles,subs);
-  emailjs.send(EJS_SERVICE,EJS_TEMPLATE,{
-    to_email: TRAINER_EMAIL,
-    from_name: S.name,
-    subject: 'Результаты теста: '+S.name+' — '+new Date().toLocaleDateString('ru-RU'),
-    message: body
-  },EJS_KEY).then(()=>console.log('Email sent')).catch(e=>console.error('Email error',e));
-}
-
-function buildEmailBody(styles,subs){
-  let t='РЕЗУЛЬТАТЫ ТЕСТА\n';
-  t+='Участник: '+S.name+'\n';
-  t+='Дата: '+new Date().toLocaleDateString('ru-RU')+'\n\n';
-  t+='── СТИЛЬ РУКОВОДСТВА ──\n';
-  t+='Доминирующий: '+styles.dom+' — '+SI[styles.dom].f+'\n';
-  t+='Дополнительный: '+styles.sec+' — '+SI[styles.sec].f+'\n\n';
-  t+='Баллы:\n';
-  ['ИП','РП','ПП','ДГ'].forEach(s=>t+=s+': '+styles.sc[s]+'/108\n');
-  t+='\n── ПОДЧИНЁННЫЕ ──\n';
-  subs.forEach(sub=>{
-    t+=sub.nm+': требуется стиль '+sub.st+'\n';
-    t+='  Навыки работы: '+sub.nr+'/54, Соц. зрелость: '+sub.sz+'/54\n';
-    const g=gap(styles.dom,styles.sec,sub.st);
-    t+='  Оценка: '+(g==='match'?'Совпадает':g==='close'?'Близко':'Разрыв')+'\n';
-  });
-  return t;
-}
-
-// ── DEMO in instructions ─────────────────────────────
-let dSel_=null,dPlaced_={};
-function dBuild(){
-  const sc=document.getElementById('demo-scale');if(!sc)return;sc.innerHTML='';
-  for(let n=0;n<=9;n++){
-    const cell=document.createElement('div');cell.style.cssText='flex:1;border-right:1px solid var(--br);cursor:pointer;text-align:center';
-    const ltr=Object.keys(dPlaced_).find(k=>dPlaced_[k]===n);
-    const top=document.createElement('div');top.style.cssText='height:30px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--b);border-bottom:1px solid var(--br);'+(ltr?'background:var(--li);':'background:var(--w);');
-    top.textContent=ltr||'';top.onclick=()=>dClick(n);
-    const bot=document.createElement('div');bot.style.cssText='height:22px;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--mu);background:var(--bg);';bot.textContent=n;
-    cell.appendChild(top);cell.appendChild(bot);sc.appendChild(cell);
-  }
-  dUpdateTiles();
-}
-function dSel(l){
-  if(dPlaced_[l]!=null){delete dPlaced_[l];dBuild();}
-  dSel_=(dSel_===l)?null:l;dUpdateTiles();dUpdateHint();
-}
-function dClick(n){
-  const ex=Object.keys(dPlaced_).find(k=>dPlaced_[k]===n);
-  if(dSel_){if(ex&&ex!==dSel_)delete dPlaced_[ex];if(dPlaced_[dSel_]!=null)delete dPlaced_[dSel_];dPlaced_[dSel_]=n;dSel_=null;}
-  else if(ex){delete dPlaced_[ex];dSel_=ex;}
-  dBuild();dUpdateHint();
-}
-function dUpdateTiles(){
-  ['A','B','C','D'].forEach(l=>{
-    const t=document.getElementById('dt-'+l);if(!t)return;
-    const isP=dPlaced_[l]!=null,isSel=dSel_===l;
-    t.style.borderColor=isSel?'var(--n)':isP?'var(--br)':'var(--br)';
-    t.style.background=isSel?'var(--li)':isP?'var(--bg)':'var(--w)';
-    t.style.opacity=isP&&!isSel?'0.5':'1';
-    const ob=t.querySelector('.demo-badge');if(ob)ob.remove();
-    if(isP){const b=document.createElement('div');b.className='demo-badge';b.style.cssText='position:absolute;top:5px;right:7px;background:var(--n);color:#fff;font-size:10px;font-weight:700;padding:1px 5px;border-radius:8px;font-family:monospace';b.textContent=dPlaced_[l];t.appendChild(b);}
-  });
-}
-function dUpdateHint(){
-  const h=document.getElementById('demo-hint');if(!h)return;
-  const cnt=Object.keys(dPlaced_).length;
-  if(dSel_){h.textContent='Теперь нажмите на цифру в шкале, чтобы поставить вариант '+dSel_;}
-  else if(cnt===0){h.textContent='Нажмите на карточку A, B, C или D';}
-  else if(cnt<4){h.textContent='Расставлено '+cnt+' из 4. Выберите следующую карточку.';}
-  else{h.textContent='Отлично! Именно так работает шкала в тесте.';}
-}
-function dReset(){dSel_=null;dPlaced_={};dBuild();dUpdateHint();}
-document.addEventListener('DOMContentLoaded',function(){dBuild();});
-
 </script>
 </body>
 </html>
