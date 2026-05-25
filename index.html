@@ -395,7 +395,21 @@ let S={name:'',ns:2,sn:['Подчинённый 1','Подчинённый 2','�
 function pb(l,c,p){const w=document.getElementById('pb-wrap');if(p==null){w.style.display='none';return;}w.style.display='block';document.getElementById('pb-lbl').textContent=l||'';document.getElementById('pb-cnt').textContent=c||'';document.getElementById('pb-fill').style.width=p+'%';}
 function show(id){document.querySelectorAll('.scr').forEach(s=>s.classList.remove('on'));document.getElementById(id).classList.add('on');window.scrollTo(0,0);}
 function lvl(v,max){const p=v/max;if(p<0.35)return{l:'низкий',c:'#991b1b'};if(p<0.65)return{l:'средний',c:'#92400e'};return{l:'высокий',c:'#065f46'};}
-function gapType(dom,sec,st){const p=st.split('/');if(p.includes(dom))return'match';if(p.includes(sec))return'close';return'gap';}
+function gapType(dom,sec,st){
+  const ORDER=['ИП','РП','ПП','ДГ'];
+  const needed=st.split('/')[0];
+  // exact match with dominant
+  if(st.split('/').includes(dom))return'match';
+  // check if dominant and needed are adjacent on the scale
+  const di=ORDER.indexOf(dom),ni=ORDER.indexOf(needed);
+  if(di>=0&&ni>=0&&Math.abs(di-ni)===1)return'close';
+  // secondary matches needed and they are adjacent or same
+  if(st.split('/').includes(sec)){
+    const si=ORDER.indexOf(sec);
+    if(si>=0&&ni>=0&&Math.abs(si-ni)<=1)return'close';
+  }
+  return'gap';
+}
 
 // ── REGISTER ──────────────────────────────────────────────────────
 function updReg(){const n=document.getElementById('in-n').value.trim(),c=document.getElementById('cb-c').checked;document.getElementById('btn-reg').disabled=!(n&&c);}
